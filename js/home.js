@@ -11,7 +11,6 @@ $('.owl-carousel').owlCarousel({
     dotsEach:1
 });
 
-     $('[data-toggle="tooltip"]').tooltip();
 });
 
 

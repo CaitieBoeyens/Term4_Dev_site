@@ -6,15 +6,17 @@ body {
 }
 
 h1{
-    font-weight: 800;
+    font-weight: bolder;
     color: #961f1e;
-    font-size: 4em;
+    font-size: 3.5em;
+    text-align: center;
 }
 
 h2 {
     font-weight: 700;
     color: #222222;
     font-size: 3em;
+    text-align: center;
 }
 
 h3 {
@@ -22,6 +24,7 @@ h3 {
     font-style: italic;
     color: #961f1e;
     font-size: 2em;
+    text-align: center;
 } 
 
 h4 {
@@ -91,6 +94,10 @@ footer {
 
 #mid-foot {
     text-align: center;
+    
+}
+#mid-foot h5{
+    color: #aaa;
 }
 
 .social {
@@ -111,29 +118,6 @@ footer {
 
 .social:hover {
     background: #0b2f2d;
-}
-
-/*MOVIES*/
-
-.info {
-    background-color: rgba(0, 0, 0, 0.3);
-    height: 75px;
-    width: 100%;
-    padding: 20px;
-    bottom: 0;
-    position: absolute;
-    padding-right: 40px;
-}
-
-.info h4{
-    color: white;
-    float: left;
-}
-
-.movie-btn {
-    width: 30px;
-    float: right;
-    margin-right: 20px;
 }
 
 /*TOOLTIP*/

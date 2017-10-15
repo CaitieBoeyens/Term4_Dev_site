@@ -1,8 +1,25 @@
-/*body {
-    width:auto;
-    padding:auto;
-    margin: 0;
-}*/
+/*MOVIES*/
+
+.info {
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 75px;
+    width: 100%;
+    padding: 20px;
+    bottom: 0;
+    position: absolute;
+    padding-right: 40px;
+}
+
+.info h4{
+    color: white;
+    float: left;
+}
+
+.movie-btn {
+    width: 30px;
+    float: right;
+    margin-right: 20px;
+}
 
 .banner-block {
     background: #961f1e;
@@ -35,3 +52,18 @@
     background-position: center;
 }
 
+.welcome {
+    background-color: rgba(255, 255, 255, 0.7); 
+    text-align: center;
+    margin-top: 1em;
+    padding: 1.5em;
+    margin-bottom: 0;
+}
+
+.recent {
+    background-color: rgba(255, 255, 255, 0.5); 
+    text-align: center;
+    margin-bottom: 1em;
+    padding: 0.2em;
+    margin-top: 0;
+}
