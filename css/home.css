@@ -4,5 +4,34 @@
     margin: 0;
 }*/
 
+.banner-block {
+    background: #961f1e;
+    height: 400px;
+    width: 100%;
+    padding: 0;
+}
 
+#movie1 {
+    background-image: url(../assets/Movies/ApocalypseNowNow_banner.jpg);
+    background-size: 100%;
+    background-position: center;
+}
+
+#movie2 {
+    background-image: url(../assets/Movies/eternalSunshineOfTheSpotlessMind_banner.jpg);
+    background-size: 100%;
+    background-position: center;
+}
+
+#movie3 {
+    background-image: url(../assets/Movies/bigFish_banner.jpg);
+    background-size: 100%;
+    background-position: center;
+}
+
+#movie4 {
+    background-image: url(../assets/Movies/theBabyShower_banner.jpg);
+    background-size: 100%;
+    background-position: center;
+}
 

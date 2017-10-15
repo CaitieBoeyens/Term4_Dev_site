@@ -3,21 +3,26 @@
      
      
         <!--LIBRARY FILES-->
+        <script src="../js/jquery/1.12.0/jquery.min.js"></script>
       
 		<link rel="stylesheet" href="../bootstrap/3.3.6/css/bootstrap.min.css">
-        <script src="../js/jquery/1.12.0/jquery.min.js"></script>
         <script src="../bootstrap/3.3.6/js/bootstrap.min.js"></script>
         
         <script src="https://use.fontawesome.com/12f8c02d0f.js"></script>
+        
+        <link rel="stylesheet" href="../owlcarousel/owl.carousel.css">
+        <link rel="stylesheet" href="../owlcarousel/owl.theme.default.css">
+        
         
         <!--FONTS-->
         
         <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
         
         <!--PROJECT FILES-->
-		
+		<script src="../js/home.js"></script>
 		<link rel="stylesheet" href="../css/main.css">
 		<link rel="stylesheet" href="../css/home.css">
+		
 		
 		<title>Indie Reel</title>
        <link rel="icon" type="image/x-icon" href="../assets/icon@72x.png">
@@ -41,7 +46,7 @@
                         
                         <ul class="nav navbar-nav navbar-right">
                            
-                            <li class="active"><a href="#">Home</a></li>
+                            <li class="nav-active"><a href="#">Home</a></li>
                             <li><a href="#">Browse Movies</a></li> 
                             <li><a href="#"></a></li>
                             <li class="dropdown">
@@ -62,18 +67,79 @@
                     </div>
                 </div>
             </nav>
-            
-            <div class="container">
                 
-            <div class="content col-xs-12">
-                
-                <div class="banner col-xs-12">
+            <div class="banner container-fluid hidden-sm hidden-xs">
                    
-                    
-                
+                <div class="owl-carousel owl-theme">
+                    <div id="movie1" class="item col-xs-12 banner-block">
+                        <div class="info">
+                            <h4>Apocalypse Now Now</h4>
+                            <a href="">   
+                            <div class="movie-btn" data-tooltip="More Info"><img  src="../assets/info.svg" alt="info"></div>
+                            </a>
+                            <a href="">
+                            <a href="" >    
+                                <div class="movie-btn" data-tooltip="Watch Now"><img  src="../assets/play.svg" alt="play"></div>
+                            </a>
+                            <div class="movie-btn" data-tooltip="Add to Watchlist">
+                                <img src="../assets/plus.svg" alt="plus">
+                            </div>
+                            </a>
+                        </div> <!--INFO-->
+                    </div>
+                    <div id="movie2" class="item col-xs-12 banner-block">
+                        <div class="info">
+                            <h4>The Eternal Sunshine of the Spotless Mind</h4>
+                            <a href="">   
+                            <div class="movie-btn" data-tooltip="More Info"><img  src="../assets/info.svg" alt="info"></div>
+                            </a>
+                            <a href="">
+                            <a href="" >    
+                                <div class="movie-btn" data-tooltip="Watch Now"><img  src="../assets/play.svg" alt="play"></div>
+                            </a>
+                            <div class="movie-btn" data-tooltip="Add to Watchlist">
+                                <img src="../assets/plus.svg" alt="plus">
+                            </div>
+                            </a>
+                        </div> <!--INFO-->
+                    </div>
+                    <div id="movie3" class="item col-xs-12 banner-block">
+                        <div class="info">
+                            <h4>Big Fish</h4>
+                            <a href="">   
+                            <div class="movie-btn" data-tooltip="More Info"><img  src="../assets/info.svg" alt="info"></div>
+                            </a>
+                            <a href="">
+                            <a href="" >    
+                                <div class="movie-btn" data-tooltip="Watch Now"><img  src="../assets/play.svg" alt="play"></div>
+                            </a>
+                            <div class="movie-btn" data-tooltip="Add to Watchlist">
+                                <img src="../assets/plus.svg" alt="plus">
+                            </div>
+                            </a>
+                        </div> <!--INFO-->
+                    </div>
+                    <div id="movie4" class="item col-xs-12 banner-block">
+                        <div class="info">
+                            <h4>The Baby Shower</h4>
+                            <a href="">   
+                            <div class="movie-btn" data-tooltip="More Info"><img  src="../assets/info.svg" alt="info"></div>
+                            </a>
+                            <a href="">
+                            <a href="" >    
+                                <div class="movie-btn" data-tooltip="Watch Now"><img  src="../assets/play.svg" alt="play"></div>
+                            </a>
+                            <div class="movie-btn" data-tooltip="Add to Watchlist">
+                                <img src="../assets/plus.svg" alt="plus">
+                            </div>
+                            </a>
+                        </div> <!--INFO-->
+                    </div>
                 </div>
                 
-                <div class="welcome col-xs-12">
+            </div>
+                
+                <!--<div class="welcome col-xs-12">
                 <h1>Hello</h1>
                 <h2>Hello</h2>
                 <h3>Hello</h3>
@@ -81,18 +147,12 @@
                 <h5>Hello</h5>
                 <p>Hello</p>
                 
-                </div>
+                </div>-->
                 
                 <div class="heading col-xs-12">
                 
                 </div>
-                
-                        
 
-            
-            </div><!--content-->
-            
-            </div><!--content container-->
             <footer class="container-fluid">
                 
                 <div class="row">
@@ -107,6 +167,18 @@
                         <div class="social"><i class="fa fa-youtube-play fa-lg" aria-hidden="true"></i></div>
                     </div>
                 </div>
+                
+                <script src="../js/jquery/1.12.0/jquery.min.js"></script>
+                <script src="../owlcarousel/owl.carousel.min.js"></script>
+                
+                <script>
+                $(document).ready(function(){
+                  $(".owl-carousel").owlCarousel({
+                      nav: true,
+                      loop: true
+                  });
+                });
+            </script>
             
             </footer><!--footer-->
     
