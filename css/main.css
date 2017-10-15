@@ -1,0 +1,109 @@
+body {
+    font-family: "Raleway", sans-serif;
+    background-image: url(../assets/pinkdust.png);
+}
+
+h1{
+    font-weight: 800;
+    color: #961f1e;
+    font-size: 4em;
+}
+
+h2 {
+    font-weight: 700;
+    color: #222222;
+    font-size: 3em;
+}
+
+h3 {
+    font-weight: 600;
+    font-style: italic;
+    color: #961f1e;
+    font-size: 2em;
+} 
+
+h4 {
+    font-weight: 500;
+    color: #145654;
+    font-size: 1.5em;
+}
+
+h5 {
+    font-weight: 500;
+    color: #145654;
+    font-size: 1em;
+}
+
+p {
+    color: #222222;
+    font-size: 1em;
+}
+
+
+.navbar {
+    background-color: #111;
+    padding-left: 60px;
+    border: none;
+    height: inherit;
+}
+
+.active {
+    border-bottom: 3px solid #961f1e;
+}
+
+.navbar-brand {
+    padding-top: 5px;
+}
+
+.navbar-brand img{
+    height: 35px; 
+}
+
+.dropdown-menu {
+    background: #145654;
+    
+}
+
+.dropdown-menu li a{
+    color: white;
+}
+
+.dropdown-menu li a:hover{
+    color: white;
+    background: #0b2f2d;
+}
+
+footer {
+    background: #222;
+    height: 50px;
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    margin-top: 2em;
+    padding: 0;
+    margin-right: 0;
+}
+
+#mid-foot {
+    text-align: center;
+}
+
+.social {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #145654;
+    color: #222;
+    margin-right: 20px;
+    float: right;
+    margin-top: 0.5em;
+    text-align: center;
+}
+
+.social i{
+    margin-top: 9px;
+}
+
+.social:hover {
+    background: #0b2f2d;
+}
