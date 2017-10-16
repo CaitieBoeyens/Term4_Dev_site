@@ -27,7 +27,7 @@
         <main>
             <div class="container">
                 <div class="stuffLoginContainer">
-                    <div class="login col-lg-6 col-md-6 col-sm-10 col-sm-offset-1 col-xs-12">
+                    <div class="login col-lg-6 col-md-6 col-sm-10 col-sm-offset-1 col-xs-12" id="login_container">
                         <form class="col-lg-8 col-lg-offset-2 col-xs-10 col-xs-offset-1">
                             <h1>LOGIN</h1>
                             <br><br>
@@ -45,7 +45,31 @@
                                <input type="button" value="Login" class="button">
                             </a>
                             <p class="noAccount">Don't have an account?</p>
-                            <p class="signUp"><a href="pages/signup.html">Sign Up</a></p>
+                            <p class="signUp" id="signup_button">Sign Up</p>
+                            <p class="TCs">Terms and Conditions</p>
+                        </form>
+                    </div>
+                    <div class="login col-lg-6 col-md-6 col-sm-10 col-sm-offset-1 col-xs-12" id="signup_container">
+                        <form class="col-lg-8 col-lg-offset-2 col-xs-10 col-xs-offset-1">
+                            <h1>SIGN UP</h1>
+                            <br><br>
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                <input id="user" type="text" class="form-control" name="username" placeholder="Username">
+                            </div>
+                            <br><br>
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                <input id="password" type="password" class="form-control" name="password" placeholder="Password">
+                            </div>
+                            <br><br>
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                <input id="Confirmpassword" type="password" class="form-control" name="Confpassword" placeholder="Confirm password">
+                            </div>
+                            <a href="pages/home.html">
+                            <input type="button" value="Sign up" class="button">
+                            </a>
                             <p class="TCs">Terms and Conditions</p>
                         </form>
                     </div>

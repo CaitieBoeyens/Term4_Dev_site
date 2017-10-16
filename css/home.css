@@ -57,7 +57,7 @@
 }
 
 .welcome {
-    background-color: rgba(255, 255, 255, 0.7); 
+    background-color: rgba(110, 110, 110, 0.3); 
     text-align: center;
     margin-top: 1em;
     padding: 1.5em;
@@ -65,7 +65,7 @@
 }
 
 .recent {
-    background-color: rgba(255, 255, 255, 0.5); 
+    background-color: rgba(0, 0, 0, 0.5); 
     text-align: center;
     margin-bottom: 1em;
     padding: 0.2em;
@@ -107,11 +107,12 @@
 .overlay-buttons {
     padding: 1em  0;
 }
-
-.recent-movie:hover .overlay .overlay-info {
-    max-height: 500px;
-    opacity: 1;
-
+@media (min-width: 768px) {
+    .recent-movie:hover .overlay .overlay-info {
+        max-height: 500px;
+        opacity: 1;
+    
+    }
 }
 /* RECENT MOVIES */
 
@@ -121,8 +122,9 @@
     background-size: 100%;
     background-position: center;
 }
-
-#recent_movie_1{
-    
-    
+@media (max-width: 768px) {
+    .recent-movie {
+        height: 35vh;
+        margin-bottom: 1.5em;
+    }
 }
