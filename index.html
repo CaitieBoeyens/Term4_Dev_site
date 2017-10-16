@@ -10,6 +10,7 @@
         
         <!-- PROJECT FILES -->
         <link href="css/login.css" rel="stylesheet">
+        <script src="js/login.js" rel="text/javascript"></script>
     </head>
     <body>
         
@@ -29,18 +30,22 @@
                     <div class="login col-lg-6 col-md-6 col-sm-10 col-sm-offset-1 col-xs-12">
                         <form class="col-lg-8 col-lg-offset-2 col-xs-10 col-xs-offset-1">
                             <h1>LOGIN</h1>
-                            <div class="inputContainer">
-                                <input name="username" type="text" placeholder="Username" class="firstInput">
+                            <br><br>
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                <input id="user" type="text" class="form-control" name="username" placeholder="Username">
                             </div>
-                            <div class="inputContainer">
-                                <input name="password" type="password" placeholder="Password">
+                            <br><br>
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                <input id="password" type="password" class="form-control" name="password" placeholder="Password">
                             </div>
-                            <p class="forgot">Forgot password?</p>
+                            <p class="forgot" data-toggle="popover" data-placement="right" data-content="SHAME!">Forgot password?</p>
                             <a href="pages/home.html">
-                               <input type="submit" value="Login" class="button">
+                               <input type="button" value="Login" class="button">
                             </a>
                             <p class="noAccount">Don't have an account?</p>
-                            <p class="signUp">Sign Up</p>
+                            <p class="signUp"><a href="pages/signup.html">Sign Up</a></p>
                             <p class="TCs">Terms and Conditions</p>
                         </form>
                     </div>
