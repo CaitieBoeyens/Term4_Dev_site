@@ -5,6 +5,10 @@ body {
     background-image: url(../assets/pinkdust.png);
 }
 
+.main-body {
+    padding-bottom:  50px; 
+}
+
 h1{
     font-weight: bolder;
     color: #961f1e;
@@ -85,10 +89,7 @@ footer {
     background: #222;
     height: 50px;
     width: 100%;
-    bottom: 0;
-    position: absolute;
     margin-top: 2em;
-    padding: 0;
     margin-right: 0;
 }
 

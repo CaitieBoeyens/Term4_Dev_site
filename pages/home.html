@@ -19,6 +19,7 @@
         <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
         
         <!--PROJECT FILES-->
+        <script src="../js/movie-data.js"></script>
 		<script src="../js/home.js"></script>
 		<link rel="stylesheet" href="../css/main.css">
 		<link rel="stylesheet" href="../css/home.css">
@@ -67,93 +68,84 @@
                     </div>
                 </div>
             </nav>
-                
-            <div class="banner container-fluid hidden-sm hidden-xs">
-                   
-                <div class="owl-carousel owl-theme">
-                    <div id="movie1" class="item col-xs-12 banner-block">
-                        <div class="info">
-                            <h4>Apocalypse Now Now</h4>
-                            <a href="">   
-                            <div class="movie-btn" data-tooltip="More Info"><img  src="../assets/info.svg" alt="info"></div>
-                            </a>
-                            <a href="">
-                            <a href="" >    
-                                <div class="movie-btn" data-tooltip="Watch Now"><img  src="../assets/play.svg" alt="play"></div>
-                            </a>
-                            <div class="movie-btn" data-tooltip="Add to Watchlist">
-                                <img src="../assets/plus.svg" alt="plus">
-                            </div>
-                            </a>
-                        </div> <!--INFO-->
-                    </div>
-                    <div id="movie2" class="item col-xs-12 banner-block">
-                        <div class="info">
-                            <h4>The Eternal Sunshine of the Spotless Mind</h4>
-                            <a href="">   
-                            <div class="movie-btn" data-tooltip="More Info"><img  src="../assets/info.svg" alt="info"></div>
-                            </a>
-                            <a href="">
-                            <a href="" >    
-                                <div class="movie-btn" data-tooltip="Watch Now"><img  src="../assets/play.svg" alt="play"></div>
-                            </a>
-                            <div class="movie-btn" data-tooltip="Add to Watchlist">
-                                <img src="../assets/plus.svg" alt="plus">
-                            </div>
-                            </a>
-                        </div> <!--INFO-->
-                    </div>
-                    <div id="movie3" class="item col-xs-12 banner-block">
-                        <div class="info">
-                            <h4>Big Fish</h4>
-                            <a href="">   
-                            <div class="movie-btn" data-tooltip="More Info"><img  src="../assets/info.svg" alt="info"></div>
-                            </a>
-                            <a href="">
-                            <a href="" >    
-                                <div class="movie-btn" data-tooltip="Watch Now"><img  src="../assets/play.svg" alt="play"></div>
-                            </a>
-                            <div class="movie-btn" data-tooltip="Add to Watchlist">
-                                <img src="../assets/plus.svg" alt="plus">
-                            </div>
-                            </a>
-                        </div> <!--INFO-->
-                    </div>
-                    <div id="movie4" class="item col-xs-12 banner-block">
-                        <div class="info">
-                            <h4>The Baby Shower</h4>
-                            <a href="">   
-                            <div class="movie-btn" data-tooltip="More Info"><img  src="../assets/info.svg" alt="info"></div>
-                            </a>
-                            <a href="">
-                            <a href="" >    
-                                <div class="movie-btn" data-tooltip="Watch Now"><img  src="../assets/play.svg" alt="play"></div>
-                            </a>
-                            <div class="movie-btn" data-tooltip="Add to Watchlist">
-                                <img src="../assets/plus.svg" alt="plus">
-                            </div>
-                            </a>
-                        </div> <!--INFO-->
-                    </div>
-                </div><!--CAROUSEL-->
-                
-            </div><!--BANNER-->
-            
-            <div class="container content">
-                <div class="welcome col-xs-12">
-                    <h1>Welcome to Indie Reel</h1>
-                    <p>We provide Award Winning Independent Films in only the best streaming
-                    quality. With our HD Content Streaming and Tailored Recommendation, we promise to bring the cinema straight to your home.
-                    Lights ,camera and action!</p>
-                </div>
-                <div class="recent col-xs-12">  
-                    <h3>Recent Releases</h3>
-                </div>
-                <div class="row">
-                    <div class="movie col-xs-12 col-sm-4">
-                        
-                    </div>
-                </div>
+
+            <div class="main-body">
+                    <div class="banner container-fluid hidden-sm hidden-xs">
+                            
+                         <div class="owl-carousel owl-theme">
+                             <div id="movie1" class="item col-xs-12 banner-block">
+                                 <div class="info">
+                                     <h4>Apocalypse Now Now</h4>
+                                     <a href="">   
+                                     <div class="movie-btn" data-tooltip="More Info"><img  src="../assets/info.svg" alt="info"></div>
+                                     </a>
+                                     <a href="" >    
+                                         <div class="movie-btn" data-tooltip="Watch Now"><img  src="../assets/play.svg" alt="play"></div>
+                                     </a>
+                                     <a href="">
+                                         <div class="movie-btn" data-tooltip="Add to Watchlist"><img src="../assets/plus.svg" alt="plus"></div>
+                                     </a>
+                                 </div> <!--INFO-->
+                             </div>
+                             <div id="movie2" class="item col-xs-12 banner-block">
+                                 <div class="info">
+                                     <h4>The Eternal Sunshine of the Spotless Mind</h4>
+                                     <a href="">   
+                                     <div class="movie-btn" data-tooltip="More Info"><img  src="../assets/info.svg" alt="info"></div>
+                                     </a>
+                                     <a href="" >    
+                                         <div class="movie-btn" data-tooltip="Watch Now"><img  src="../assets/play.svg" alt="play"></div>
+                                     </a>
+                                     <a href="">
+                                         <div class="movie-btn" data-tooltip="Add to Watchlist"><img src="../assets/plus.svg" alt="plus"></div>
+                                     </a>
+                                 </div> <!--INFO-->
+                             </div>
+                             <div id="movie3" class="item col-xs-12 banner-block">
+                                 <div class="info">
+                                     <h4>Big Fish</h4>
+                                     <a href="">   
+                                     <div class="movie-btn" data-tooltip="More Info"><img  src="../assets/info.svg" alt="info"></div>
+                                     </a>
+                                     <a href="" >    
+                                         <div class="movie-btn" data-tooltip="Watch Now"><img  src="../assets/play.svg" alt="play"></div>
+                                     </a>
+                                     <a href="">   
+                                     <div class="movie-btn" data-tooltip="Add to Watchlist"><img src="../assets/plus.svg" alt="plus"></div>
+                                     </a>
+                                 </div> <!--INFO-->
+                             </div>
+                             <div id="movie4" class="item col-xs-12 banner-block">
+                                 <div class="info">
+                                     <h4>The Baby Shower</h4>
+                                     <a href="">   
+                                     <div class="movie-btn" data-tooltip="More Info"><img  src="../assets/info.svg" alt="info"></div>
+                                     </a>
+                                     <a href="" >    
+                                         <div class="movie-btn" data-tooltip="Watch Now"><img  src="../assets/play.svg" alt="play"></div>
+                                     </a>
+                                     <a href="">
+                                     <div class="movie-btn" data-tooltip="Add to Watchlist"><img src="../assets/plus.svg" alt="plus"></div>
+                                     </a>
+                                 </div> <!--INFO-->
+                             </div>
+                         </div><!--CAROUSEL-->
+                         
+                     </div><!--BANNER-->
+                     
+                     <div class="container content">
+                         <div class="welcome col-xs-12">
+                             <h1>Welcome to Indie Reel</h1>
+                             <p>We provide Award Winning Independent Films in only the best streaming
+                             quality. With our HD Content Streaming and Tailored Recommendation, we promise to bring the cinema straight to your home.
+                             Lights ,camera and action!</p>
+                         </div>
+                         <div class="recent col-xs-12">  
+                             <h3>Recent Releases</h3>
+                         </div>
+                         <div class="row" id="most_recent_movie_container">
+                         </div>
+                     </div>
             </div><!--CONTENT-->
 
             <footer class="container-fluid">

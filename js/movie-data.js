@@ -1,6 +1,8 @@
-let films = [
+const films = [
     {
         "name": "The Blair Witch Program",
+        "id": "film1",
+        "img-path": "../assets/Movies/blairWitchProject_poster.jpg",
         "year":"1999",
         "type": "Mystery, Psychological Horror",
         "duration": "1h 45m",
@@ -10,6 +12,32 @@ let films = [
         "description": "Found video footage tells the tale of three film students (Heather Donahue, Joshua Leonard, Michael C. Williams) who've traveled to a small town to collect documentary footage about the Blair Witch, a legendary local murderer. Over the course of several days, the students interview townspeople and gather clues to support the tale's veracity. But the project takes a frightening turn when the students lose their way in the woods and begin hearing horrific noises."
     },
     
+    {
+        "name": "Eternal Sunshine of the Spotless Mind",
+        "id": "film2",
+        "img-path": "../assets/Movies/eternalSunshineOfTheSpotlessMind_poster.jpg",
+        "year":"2004",
+        "type": "Drama, Romance, Sci-Fi",
+        "duration": "1h 48m",
+        "Imdb": "8.3",
+        "cast": "Kate Winslet, Jim Carrey",
+        "director": "Michel Gondry",
+        "description": "When their relationship turns sour, a couple undergoes a procedure to have each other erased from their memories. But it is only through the process of loss that they discover what they had to begin with."
+    },
+
+    {
+        "name": "What We Do in the Shadows",
+        "id": "film3",
+        "img-path": "../assets/Movies/whatWeDoInTheShadows_poster.jpg",
+        "year":"2014",
+        "type": "Comedy Horror",
+        "duration": "1h 27m",
+        "Imdb": "7.6",
+        "cast": "Jemaine Clement, Taika Waititi, Jonathan Brugh, Cori Gonzalez-Macuer",
+        "director": "Taika Waititi, Jemaine Clement",
+        "description": "Vampire housemates (Jemaine Clement, Taika Waititi, Jonathan Brugh) try to cope with the complexities of modern life and show a newly turned hipster (Cori Gonzalez-Macuer) some of the perks of being undead."
+    },
+
     {
         "name": "Memento",
         "year":"2000",
@@ -30,28 +58,6 @@ let films = [
         "cast": "Saoirse Ronan, Lucas Hedges, Laurie Metcalf",
         "director": "Greta Gerwig",
         "description": "Marion McPherson, a California nurse, works tirelessly to keep her family afloat after her husband loses his job. She also maintains a turbulent bond with a teenage daughter who is just like her -- loving, strong-willed and deeply opinionated."
-    },
-    
-    {
-        "name": "Eternal Sunshine of the Spotless Mind",
-        "year":"2004",
-        "type": "Drama, Romance, Sci-Fi",
-        "duration": "1h 48m",
-        "Imdb": "8.3",
-        "cast": "Kate Winslet, Jim Carrey",
-        "director": "Michel Gondry",
-        "description": "When their relationship turns sour, a couple undergoes a procedure to have each other erased from their memories. But it is only through the process of loss that they discover what they had to begin with."
-    },
-    
-    {
-        "name": "What We Do in the Shadows",
-        "year":"2014",
-        "type": "Comedy Horror",
-        "duration": "1h 27m",
-        "Imdb": "7.6",
-        "cast": "Jemaine Clement, Taika Waititi, Jonathan Brugh, Cori Gonzalez-Macuer",
-        "director": "Taika Waititi, Jemaine Clement",
-        "description": "Vampire housemates (Jemaine Clement, Taika Waititi, Jonathan Brugh) try to cope with the complexities of modern life and show a newly turned hipster (Cori Gonzalez-Macuer) some of the perks of being undead."
     },
     
     {
