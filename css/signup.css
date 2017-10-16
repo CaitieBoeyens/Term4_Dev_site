@@ -1,0 +1,220 @@
+/* FONTS */
+
+@font-face {
+    font-family: Regular;
+    src: url("fonts/Raleway-Regular.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Black;
+    src: url("fonts/Raleway-Black.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Medium;
+    src: url("fonts/Raleway-Medium.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Light;
+    src: url("fonts/Raleway-Light.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+
+/* GENERAL */
+
+body {
+    background-image: url(resources/background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 900px;
+    padding: 0px;
+    margin: 0px;
+}
+
+p {
+    font-family: Regular;
+}
+
+
+/* HEADER */
+
+header {
+    height: 120px;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2));
+    margin: 0px;
+}
+
+.logo {
+    padding-top: 35px;
+}
+
+
+/* MAIN */
+
+main {
+    height: 700;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.stuffSignUpContainer {
+   height: 550px;
+   padding: 0px;
+   margin: 80px auto auto auto;
+}
+
+/* extra stuff */
+
+.extraStuff {
+   height: 550px;
+   background: rgba(255, 255, 255, 0.2);
+   padding: 0px;
+   margin: 0px;
+}
+
+.images {
+    height: 250px;
+    width: 100%;
+    color: #999999;
+    font-family: Regular;
+}
+
+.HD {
+    padding-top: 70px;
+    text-align: center;
+}
+
+.Award {
+   padding-top: 70px;
+   text-align: center;
+}
+
+.Tailored {
+    padding-top: 70px;
+    text-align: center;
+}
+
+.textDesciption {
+    height: 300px;
+    width: 100%;
+    text-align: center;
+    color: #999999;
+}
+
+.textDesciption p {
+    padding: 80px 20px 0px 20px;
+    font-family: Regular;
+}
+
+.login {
+   height: 550px;
+   background: rgba(255, 255, 255, 0.6); 
+   padding: 0px;
+   margin: 0px;
+}
+
+form {
+   margin: 40px auto 0px auto;
+}
+
+form h1 {
+    font-family: Black;
+    color: #682020;
+    text-align: center;
+    font-size: 45px;
+}
+
+input {
+    display: block;
+    width: 260px;
+    font-family: Light;
+    text-align: left;
+}
+
+#user {
+    height: 40px;
+    border-radius: 0px 20px 20px 0px;
+}
+
+#password {
+    height: 40px;
+    border-radius: 0px 20px 20px 0px;
+}
+
+#Confirmpassword {
+    height: 40px;
+    border-radius: 0px 20px 20px 0px;
+}
+
+.button {
+    display: block;
+    border-radius: 20px;
+    height: 40px;
+    width: 150px;
+    margin-top: 40px;
+    margin-left: 100px;
+    font-family: Light;
+    text-align: center;
+    background-color: #cd2a2c;
+    color: white;
+}
+
+.forgot {
+    color: #145654;
+    font-family: Regular;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.noAccount {
+    color: #145654;
+    text-align: center;
+    margin-top: 20px;
+    font-family: Medium;
+}
+
+.signUp {
+    color: #145654;
+    text-align: center;
+    font-size: 20px;
+    font-family: Medium;
+}
+
+.TCs {
+    color: #212121;
+    text-align: center;
+    margin-top: 45px;
+    font-size: 12px;
+    font-family: Light;
+}
+
+
+/* FOOTER */
+
+footer {
+    height: 80px;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1));
+    padding: 0px;
+    margin: 70px 0px 0px 0px;
+    font-family: Regular;
+}
+
+.copyright {
+    padding-top: 10px;
+}
+
+.socialMedia img {
+    padding: 0px 0px 0px 25px;
+}
