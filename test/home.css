@@ -1,0 +1,72 @@
+body {
+    width:auto;
+    padding:auto;
+}
+
+.header {
+    background-color: black;
+    height:30px;
+}
+
+.logo {
+    background-color:blue;
+    height:30px;
+}
+
+.navigation {
+    background-color:orange;
+    height:30px;
+}
+
+.content {
+    background-color:aqua;
+    height:300px;
+}
+
+.banner {
+    height:60px;
+    background-color:black;
+}
+
+.greyblock {
+    height:10px;
+    background-color:purple;
+    margin-top:50px;
+}
+
+.welcome {
+    height:40px;
+    background-color:grey;
+}
+
+.heading {
+    height:40px;
+    background-color:white;
+}
+
+.movie {
+    height:30px;
+    background-color:black;
+}
+
+.footer {
+    background-color:red;
+    height:50px;
+}
+
+.foot1 {
+    background-color:yellow;
+    height:50px;
+}
+
+.foot2 {
+    background-color:green;
+    height:50px;
+}
+
+.foot3 {
+    background-color:pink;
+    height:50px;
+}
+
+
