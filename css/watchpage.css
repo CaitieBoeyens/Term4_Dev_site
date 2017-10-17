@@ -1,0 +1,48 @@
+/* GENERAL */
+
+
+/* MOVIE STUFF */
+
+.movieStuff {
+    width: 100%;
+    padding: 0px;
+    background-color: black;
+}
+
+.movie {
+    height: 100%;
+    float: left;
+    padding: 0px;
+}
+
+.movieInfo {
+    height: 100%;
+    border-color: #3c3b3d;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.poster {
+    width: 75%;
+    margin: 30px auto 0px auto;
+    border-radius: 10px;
+}
+
+figcaption {
+    color: #ebebeb;
+    margin: 20px auto 0px auto;
+    width: 75%;
+    font-size: 12px;
+}
+
+
+
+/* MIGHT LIKE */
+
+.mightLike {
+    
+}
+
+.moviePosters {
+    
+}
+
