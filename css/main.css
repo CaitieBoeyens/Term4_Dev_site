@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* FONTS */
 
 @font-face {
@@ -234,3 +235,198 @@ footer {
 
 
 
+=======
+/*GENERAL*/
+
+body {
+    font-family: "Raleway", sans-serif;
+    background-image: url(../assets/pinkdust.png);
+}
+
+.main-body {
+    padding-bottom:  50px; 
+}
+
+h1{
+    font-weight: bolder;
+    color: #961f1e;
+    font-size: 3.5em;
+    text-align: center;
+}
+
+h2 {
+    font-weight: 700;
+    color: #222222;
+    font-size: 3em;
+    text-align: center;
+}
+
+h3 {
+    font-weight: 600;
+    font-style: italic;
+    color: #961f1e;
+    font-size: 2em;
+    text-align: center;
+} 
+
+h4 {
+    font-weight: 500;
+    color: #145654;
+    font-size: 1.5em;
+}
+
+h5 {
+    font-weight: 500;
+    color: #145654;
+    font-size: 1em;
+}
+
+p {
+    color: #222222;
+    font-size: 1em;
+}
+
+/*NAV*/
+
+.navbar {
+    background-color: #111;
+    padding-left: 60px;
+    border: none;
+    height: inherit;
+}
+
+.nav-active {
+    border-bottom: 3px solid #961f1e;
+}
+
+.navbar-brand {
+    padding-top: 5px;
+}
+
+.navbar-brand img{
+    height: 35px; 
+}
+
+.dropdown-menu {
+    background: #145654;
+    
+}
+
+.dropdown-menu li a{
+    color: white;
+}
+
+.dropdown-menu li a:hover{
+    color: white;
+    background: #0b2f2d;
+}
+
+/*FOOTER*/
+
+footer {
+    background: #222;
+    height: 50px;
+    width: 100%;
+    margin-top: 2em;
+    margin-right: 0;
+}
+
+#mid-foot {
+    text-align: center;
+    
+}
+#mid-foot h5{
+    color: #aaa;
+}
+
+.social {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #145654;
+    color: #222;
+    margin-right: 20px;
+    float: right;
+    margin-top: 0.5em;
+    text-align: center;
+}
+
+.social i{
+    margin-top: 9px;
+}
+
+.social:hover {
+    background: #0b2f2d;
+}
+
+/*TOOLTIP*/
+/**
+ * Tooltip Styles
+ */
+
+/* Add this attribute to the element that needs a tooltip */
+[data-tooltip] {
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+}
+
+/* Hide the tooltip content by default */
+[data-tooltip]:before,
+[data-tooltip]:after {
+  visibility: hidden;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Position tooltip above the element */
+[data-tooltip]:before {
+  position: absolute;
+  bottom: 110%;
+  left: 50%;
+  margin-bottom: 5px;
+  margin-left: -80px;
+  padding: 7px;
+  width: 160px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #000;
+  background-color: hsla(0, 0%, 20%, 0.9);
+  color: #fff;
+  content: attr(data-tooltip);
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+/* Triangle hack to make tooltip look like a speech bubble */
+[data-tooltip]:after {
+  position: absolute;
+  bottom: 110%;
+  left: 50%;
+  margin-left: -5px;
+  width: 0;
+  border-top: 5px solid #000;
+  border-top: 5px solid hsla(0, 0%, 20%, 0.9);
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+  content: " ";
+  font-size: 0;
+  line-height: 0;
+}
+
+/* Show tooltip content on hover */
+[data-tooltip]:hover:before,
+[data-tooltip]:hover:after {
+  visibility: visible;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+
+
+
+>>>>>>> ce5549ba1e05dfd9c5765a0697b9256fe287cff9
