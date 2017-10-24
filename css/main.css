@@ -1,7 +1,50 @@
-/*GENERAL*/
+/* FONTS */
+
+@font-face {
+    font-family: "Raleway-Regular";
+    src: url("../fonts/Raleway-Regular.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family:"Raleway-Bold";
+    src: url("../fonts/Raleway-Bold.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family:"Raleway-SemiBold";
+    src: url("../fonts/Raleway-SemiBold.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family:"Raleway-Black";
+    src: url("../fonts/Raleway-Black.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Raleway-Medium";
+    src: url("../fonts/Raleway-Medium.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Raleway-Light";
+    src: url("../fonts/Raleway-Light.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+/* GENERAL */
 
 body {
-    font-family: "Raleway", sans-serif;
+    font-family: "Raleway-Regular", sans-serif;
     background-image: url(../assets/pinkdust.png);
 }
 
@@ -10,21 +53,21 @@ body {
 }
 
 h1{
-    font-weight: bolder;
+    font-family: "Raleway-Black", sans-serif;
     color: #961f1e;
     font-size: 3.5em;
     text-align: center;
 }
 
 h2 {
-    font-weight: 700;
+    font-family: "Raleway-SemiBold", sans-serif;
     color: #222222;
     font-size: 3em;
     text-align: center;
 }
 
 h3 {
-    font-weight: 600;
+    font-family: "Raleway-Medium", sans-serif;
     font-style: italic;
     color: #961f1e;
     font-size: 2em;
@@ -32,13 +75,13 @@ h3 {
 } 
 
 h4 {
-    font-weight: 500;
+    font-family: "Raleway-Bold", sans-serif;
     color: #145654;
     font-size: 1.5em;
 }
 
 h5 {
-    font-weight: 500;
+    font-family: "Raleway-Bold", sans-serif;
     color: #145654;
     font-size: 1em;
 }

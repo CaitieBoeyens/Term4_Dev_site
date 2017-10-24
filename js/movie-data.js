@@ -3,6 +3,7 @@ const films = [
         "name": "The Blair Witch Program",
         "id": "film1",
         "img-path": "../assets/Movies/blairWitchProject_poster.jpg",
+        "img-ban": "../assets/Movies/blairWitchProject_banner.jpg",
         "year":"1999",
         "type": "Mystery, Psychological Horror",
         "duration": "1h 45m",
@@ -10,12 +11,14 @@ const films = [
         "cast": "Heater Donahue, Joshua Leonard, Michael C. Williams",
         "director": "Eduardo Sánchez, Daniel Myrick",
         "description": "Found video footage tells the tale of three film students (Heather Donahue, Joshua Leonard, Michael C. Williams) who've traveled to a small town to collect documentary footage about the Blair Witch, a legendary local murderer. Over the course of several days, the students interview townspeople and gather clues to support the tale's veracity. But the project takes a frightening turn when the students lose their way in the woods and begin hearing horrific noises."
+        
     },
     
     {
         "name": "Eternal Sunshine of the Spotless Mind",
         "id": "film2",
         "img-path": "../assets/Movies/eternalSunshineOfTheSpotlessMind_poster.jpg",
+        "img-ban": "../assets/Movies/eternalSunshineOfTheSpotlessMind_banner.jpg",
         "year":"2004",
         "type": "Drama, Romance, Sci-Fi",
         "duration": "1h 48m",
@@ -29,6 +32,7 @@ const films = [
         "name": "What We Do in the Shadows",
         "id": "film3",
         "img-path": "../assets/Movies/whatWeDoInTheShadows_poster.jpg",
+        "img-ban": "../assets/Movies/whatWeDoInTheShadows_banner.jpg",
         "year":"2014",
         "type": "Comedy Horror",
         "duration": "1h 27m",
@@ -40,6 +44,9 @@ const films = [
 
     {
         "name": "Memento",
+        "id": "film4",
+        "img-path": "../assets/Movies/memento_poster.png",
+        "img-ban": "../assets/Movies/memento_banner.jpg",
         "year":"2000",
         "type": "Crime film, Drama",
         "duration": "1h 53m",
@@ -51,17 +58,23 @@ const films = [
     
     {
         "name": "Lady Bird",
+        "id": "film5",
+        "img-path": "../assets/Movies/ladyBird_poster.png",
+        "img-ban": "../assets/Movies/ladyBird_banner.jpg",
         "year":"2017",
         "type": "Drama, Comedy",
         "duration": "1h 33m",
         "Imdb": "7.4",
         "cast": "Saoirse Ronan, Lucas Hedges, Laurie Metcalf",
         "director": "Greta Gerwig",
-        "description": "Marion McPherson, a California nurse, works tirelessly to keep her family afloat after her husband loses his job. She also maintains a turbulent bond with a teenage daughter who is just like her -- loving, strong-willed and deeply opinionated."
+        "description": "Marion McPherson, a California nurse, works tirelessly to keep her family afloat after her husband loses his job. She also maintains a turbulent bond with a teenage daughter who is just like her loving, strong-willed and deeply opinionated."
     },
     
     {
         "name": "Apocalypse Now Now",
+        "id": "film6",
+        "img-path": "../assets/Movies/ApocalypseNowNow_poster.jpg",
+        "img-ban": "../assets/Movies/ApocalypseNowNow_banner.jpg",
         "year":"2017",
         "type": "Fantasy",
         "duration": "7m",
@@ -73,6 +86,9 @@ const films = [
     
     {
         "name": "The Proposal",
+        "id": "film7",
+        "img-path": "../assets/Movies/theProposal_poster.jpg",
+        "img-ban": "../assets/Movies/theProposal_banner.jpg",
         "year":"2016",
         "type": "Comedy, Romance",
         "duration": "9m",
@@ -84,6 +100,9 @@ const films = [
     
     {
         "name": "Big Fish",
+        "id": "film8",
+        "img-path": "../assets/Movies/bigFish_poster.jpg",
+        "img-ban": "../assets/Movies/bigFish_banner.jpg",
         "year":"2003",
         "type": "Fantasy, Comedy-drama",
         "duration": "2h 5m",
@@ -95,6 +114,9 @@ const films = [
     
     {
         "name": "Bottle Rocket",
+        "id": "film9",
+        "img-path": "../assets/Movies/BottleRocket_poster.png",
+        "img-ban": "../assets/Movies/bottleRocket_banner.jpg",
         "year":"1996",
         "type": "Crime, Comedy",
         "duration": "1h 31m",
@@ -106,6 +128,9 @@ const films = [
     
     {
         "name": "My Own Private Idaho",
+        "id": "film10",
+        "img-path": "../assets/Movies/MyOwnPrivateIdaho_poster.png",
+        "img-ban": "../assets/Movies/myOwnPrivateIdaho_banner.jpg",
         "year":"1991",
         "type": "Thriller, Drama",
         "duration": "1h 42m",
@@ -117,6 +142,9 @@ const films = [
     
     {
         "name": "Requeim for a Dream",
+        "id": "film11",
+        "img-path": "../assets/Movies/RequiemForADream_poster.png",
+        "img-ban": "../assets/Movies/RequiemForADream_banner.jpg",
         "year":"1991",
         "type": "Adventure, Drama",
         "duration": "1h 41m",
@@ -127,6 +155,9 @@ const films = [
     },
     {
         "name": "Gummo",
+        "id": "film12",
+        "img-path": "../assets/Movies/gummo_poster.png",
+        "img-ban": "../assets/Movies/gummo_banner.jpg",
         "year":"1997",
         "type": "Dystopian",
         "duration": "1h 29m",
@@ -137,6 +168,9 @@ const films = [
     }, 
     {
         "name": "Boyhood",
+        "id": "film13",
+        "img-path": "../assets/Movies/BoyHood_poster.png",
+        "img-ban": "../assets/Movies/boyhood_banner.jpg",
         "year":"2014",
         "type": "Drama",
         "duration": "2h 45m",
@@ -147,6 +181,9 @@ const films = [
     },
     {
         "name": "Napoleon Dynamite",
+        "id": "film14",
+        "img-path": "../assets/Movies/NapoleonDynamite_poster.png",
+        "img-ban": "../assets/Movies/NapoleonDynamite_banner.jpg",
         "year":"2004",
         "type": "Drama",
         "duration": "1h 35m",
@@ -158,6 +195,9 @@ const films = [
     
     {
         "name": "Drugstore Cowboy",
+        "id": "film15",
+        "img-path": "../assets/Movies/DrugstoreCowboy_poster.png",
+        "img-ban": "../assets/Movies/drugstoreCowboy_banner.jpg",
         "year":"1989",
         "type": "Crime, Drama",
         "duration": "1h 42m",
@@ -169,6 +209,9 @@ const films = [
     
     {
         "name": "Slacker",
+        "id": "film16",
+        "img-path": "../assets/Movies/Slacker_poster.png",
+        "img-ban": "../assets/Movies/slacker_banner.jpg",
         "year":"1991",
         "type": "Comedy, Drama",
         "duration": "1h 40m",
@@ -180,6 +223,9 @@ const films = [
     
     {
         "name": "Donnie Darko",
+        "id": "film17",
+        "img-path": "../assets/Movies/DonnieDarko_poster.png",
+        "img-ban": "../assets/Movies/donniedarko_banner.jpeg",
         "year":"2001",
         "type": "Sci-Fi",
         "duration": "2h 14m",
@@ -191,6 +237,9 @@ const films = [
     
     {
         "name": "Pulp Fiction",
+        "id": "film18",
+        "img-path": "../assets/Movies/PulpFiction_poster.png",
+        "img-ban": "../assets/Movies/pulpFiction_banner.jpg",
         "year":"1994",
         "type": "Crime, Comedy",
         "duration": "2h 34m",
@@ -202,6 +251,9 @@ const films = [
     
     {
         "name": "Sex, Lies, and Videotape",
+        "id": "film19",
+        "img-path": "../assets/Movies/SexLiesAndVideotape_poster.png",
+        "img-ban": "../assets/Movies/sexLiesAndVideotape_banner.jpg",
         "year":"1989",
         "type": "Drama",
         "duration": "1h 40m",
@@ -213,6 +265,9 @@ const films = [
     
     {
         "name": "Safety Not Guaranteed",
+        "id": "film20",
+        "img-path": "../assets/Movies/SafetyNotGuaranteed_poster.png",
+        "img-ban": "../assets/Movies/safetyNotGuaranteed_banner.jpg",
         "year":"2012",
         "type": "Sci-Fi, Comedy, Romance",
         "duration": "1h 26m",
