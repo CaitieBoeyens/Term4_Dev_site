@@ -32,4 +32,10 @@ $(function(){
             $(`#${this.id}`).css("background-image", `url("${this['img-path'] }")`);
         });
     });
+    
+    $("#swap").on("click",function(){ 
+        $(this).css(
+            "transform" : "transform": "rotate(45deg)");
+        $(this).attr("data-tooltip", "Remove from Watchlist");
+    });
 });

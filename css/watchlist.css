@@ -1,0 +1,80 @@
+.info {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 75px;
+    width: 100%;
+    padding: 20px;
+    bottom: 0;
+    position: absolute;
+    padding-right: 40px;
+}
+
+.info h4{
+    color: white;
+    float: left;
+}
+
+.movie-btn {
+    width: 30px;
+    float: right;
+    margin-right: 20px;
+}
+
+.movie-btn img{
+    width: 100%;
+}
+
+#removal img {
+    transform: rotate(45deg);
+}
+
+
+
+.watchlist-welcome {
+    background-color: rgba(110, 110, 110, 0.3); 
+    text-align: center;
+    margin-top: 1em;
+    padding: 1.5em 10%;
+    margin-bottom: 0;
+}
+
+.movie1 {
+    background-image: url(../assets/Movies/ApocalypseNowNow_banner.jpg);
+    background-size: 100%;
+    background-position: center;
+    height: 400px;
+        margin-top: 1em;
+    margin-bottom: 0;
+    padding-top: 0.5em;
+}
+
+.movie2 {
+    background-image: url(../assets/Movies/eternalSunshineOfTheSpotlessMind_banner.jpg);
+    background-size: 100%;
+    background-position: center;
+    height: 400px;
+        margin-top: 1em;
+
+    margin-bottom: 0;
+    padding-top: 0.5em;
+}
+
+.movie3 {
+    background-image: url(../assets/Movies/bigFish_banner.jpg);
+    background-size: 100%;
+    background-position: center;
+    height: 400px;
+        margin-top: 1em;
+
+    margin-bottom: 0;
+    padding-top: 0.5em;
+
+}
+
+.watchlist-welcome p {
+    color: white;
+}
+
+
+
+
+
