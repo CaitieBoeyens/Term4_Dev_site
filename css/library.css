@@ -44,13 +44,20 @@
 }
 
 select {
-    border-radius: 20px 20px 20px 20px;
+    border-radius: 20px;
     width: 80%;
     padding: 0.2em 10px;
+    color: #145654;
+    outline: 0;
 }
 
 label {
     color: #bebebe;
+}
+
+select option:hover {
+    background-color:#145654;
+    color: #ffffff; 
 }
 
 #year {
