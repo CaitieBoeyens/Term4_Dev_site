@@ -2,8 +2,8 @@
     margin-bottom: 1em;
 }
 
-#movie4 {
-    background-image: url(../assets/Movies/pulpFiction_banner.jpg);
+#header {
+    background-image: url(../assets/library_head.jpeg);
     background-size: 100%;
     background-position: center;
 }
@@ -22,6 +22,58 @@
     padding: 1.5em 10%;
     margin-bottom: 0;
     padding-top: 0.5em;
+}
+
+/* FILTERS */
+
+.filters {
+    background-color: rgba(0, 0, 0, 0.5); 
+    text-align: center;
+    margin-bottom: 1em;
+    padding: 2em 0;
+    margin-top: 0;
+}
+
+.filters h5 {
+    color: #961f1e;
+}
+
+
+#genre {
+    margin-bottom: 1em;
+}
+
+select {
+    border-radius: 20px 20px 20px 20px;
+    width: 80%;
+    padding: 0.2em 10px;
+}
+
+label {
+    color: #bebebe;
+}
+
+#year {
+    margin-bottom: 1em;
+}
+
+#view-mode {
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 50%;
+    border-radius: 5px 5px 5px 5px;
+    padding-top: 0.1em;
+    padding-bottom: 0.6em;
+    margin: auto;
+}
+
+#view-mode h5{
+    color: #145654;
+}
+
+#view-mode img {
+    display: inline-block;
+    width: 50px;
+    cursor: pointer;
 }
 
 /*MOVIES*/
