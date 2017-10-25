@@ -10,6 +10,8 @@ $(function(){
         nav:false,
         dotsEach:1
     });
+    
+
 
     // const films imported from movie-data.js
     function getMostRecentMovies(num_movies)
@@ -42,7 +44,7 @@ $(function(){
                                 <div class="movie-btn" data-tooltip="Watch Now"><img  src="../assets/play.svg" alt="play"></div>
                             </a>
                             <a href="">
-                                <div class="movie-btn" data-tooltip="Add to Watchlist"><img src="../assets/plus.svg" alt="plus"></div>
+                                <div id="swap" class="movie-btn" data-tooltip="Add to Watchlist"><img src="../assets/plus.svg" alt="plus"></div>
                             </a>
                         </div>
                     </div>
@@ -54,7 +56,21 @@ $(function(){
     }
     const most_recent_movies = getMostRecentMovies(3);
     appendMostRecentMovies(most_recent_movies);
-
+    
+    
+    $("#swap").click(function(){
+        
+        if($(this).data("tooltip") === "Add to Watchlist"){
+            $(this).attr({"data-tooltip": "Remove from Watchlist"});
+            $(this).children("img").css({"transform" : "rotate(45deg)"});
+        };
+        
+        
+        
+        
+    });
 });
+
+
 
 

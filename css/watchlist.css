@@ -23,7 +23,15 @@
     width: 100%;
 }
 
-#removal img {
+#removal_1 img {
+    transform: rotate(45deg);
+}
+
+#removal2 img {
+    transform: rotate(45deg);
+}
+
+#removal3 img {
     transform: rotate(45deg);
 }
 

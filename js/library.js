@@ -21,9 +21,9 @@ $(function(){
                             <a href="" >    
                                 <div class="movie-btn" data-tooltip="Watch Now"><img  src="../assets/play.svg" alt="play"></div>
                             </a>
-                            <a href="">
-                                <div class="movie-btn" data-tooltip="Add to Watchlist"><img src="../assets/plus.svg" alt="plus"></div>
-                            </a>
+                          
+                                <div id="swap" class="movie-btn" data-tooltip="Add to Watchlist"><img src="../assets/plus.svg" alt="plus"></div>
+                          
                         </div>
                     </div>
                 </div>
@@ -33,9 +33,15 @@ $(function(){
         });
     });
     
-    $("#swap").on("click",function(){ 
-        $(this).css(
-            "transform" : "transform": "rotate(45deg)");
-        $(this).attr("data-tooltip", "Remove from Watchlist");
+    $("#swap").click(function(){
+        
+        if($(this).data("tooltip") === "Add to Watchlist"){
+            $(this).attr({"data-tooltip": "Remove from Watchlist"});
+            $(this).children("img").css({"transform" : "rotate(45deg)"});
+        };
+        
+        
+        
+        
     });
 });
