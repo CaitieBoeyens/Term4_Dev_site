@@ -1,0 +1,109 @@
+.movie {
+    margin-bottom: 1em;
+}
+
+#movie4 {
+    background-image: url(../assets/Movies/pulpFiction_banner.jpg);
+    background-size: 100%;
+    background-position: center;
+}
+
+.banner-block {
+    background: #961f1e;
+    height: 400px;
+    width: 100%;
+    padding: 0;
+}
+
+.library-welcome {
+    background-color: rgba(110, 110, 110, 0.3); 
+    text-align: center;
+    margin-top: 1em;
+    padding: 1.5em 10%;
+    margin-bottom: 0;
+    padding-top: 0.5em;
+}
+
+/*MOVIES*/
+
+.info {
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 75px;
+    width: 100%;
+    padding: 20px;
+    bottom: 0;
+    position: absolute;
+    padding-right: 40px;
+}
+
+.info h4{
+    color: white;
+    float: left;
+}
+
+.movie-btn {
+    width: 30px;
+    float: right;
+    margin-right: 20px;
+}
+
+.movie-btn img{
+    width: 100%;
+}
+
+/* OVERLAY */
+
+.overlay {
+    padding: 2em;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.overlay-name h4{
+    color: #e7e7e7;
+}
+
+.overlay-name {
+    padding-bottom: 0.5em;
+    border-bottom: 2px solid #e7e7e7;
+}
+
+.overlay-info h5, p {
+    color: #e7e7e7;
+}
+
+.overlay-info {
+    padding-bottom: 1em;
+    padding-top: 0.5em;
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 1.5s, opacity 0.3s;
+}
+
+.overlay-buttons {
+    padding: 1em  0;
+}
+@media (min-width: 768px) {
+    .movie-block:hover .overlay .overlay-info {
+        max-height: 500px;
+        opacity: 1;
+    
+    }
+}
+/* RECENT MOVIES */
+
+.movie-block {
+    height: 500px;
+    position: relative;
+    background-size: 100%;
+    background-position: center;
+}
+@media (max-width: 768px) {
+    .movie-block {
+        height: 35vh;
+        margin-bottom: 1.5em;
+    }
+}
