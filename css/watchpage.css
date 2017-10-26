@@ -1,0 +1,43 @@
+/* GENERAL */
+
+.panel {
+    border-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    padding: 0;
+}
+
+.panel-heading {
+    background-color: rgba(110, 110, 110, 0.3);
+}
+
+
+/* MOVIE STUFF */
+
+.movieStuff {
+    background-color: rgba(0, 0, 0, 0);
+    text-align: center
+}
+
+.movieStuff h1 {
+    font-size: 2.2em;
+}
+
+
+/* MIGHT LIKE */
+
+.mightLike {
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 30px;
+    text-align: center;
+}
+
+.poster { 
+    margin-top: 20px;
+}
+
+.mightLike panel-heading {
+    background-color: rgba(110, 110, 110, 0.3);
+}
+
+
+

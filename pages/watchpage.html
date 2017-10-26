@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     
+     
+        <!--LIBRARY FILES-->
+        <script src="../js/jquery/1.12.0/jquery.min.js"></script>
+      
+		<link rel="stylesheet" href="../bootstrap/3.3.6/css/bootstrap.min.css">
+        <script src="../bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        
+        <script src="https://use.fontawesome.com/12f8c02d0f.js"></script>
+        
+        <!--FONTS-->
+        
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        
+        <!--PROJECT FILES-->
+		<script src="../js/watchpage.js"></script>
+		<link rel="stylesheet" href="../css/main.css">
+		<link rel="stylesheet" href="../css/watchpage.css">
+		
+		
+		<title>Indie Reel</title>
+       <link rel="icon" type="image/x-icon" href="../assets/icon@72x.png">
+    
+    </head>
+    
+    <body>  
+        
+        <!-- HEADER -->
+        <header>
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span> 
+                        </button>
+                        <a class="navbar-brand" href="#">
+                            <img src="../assets/logo.svg" alt="IndieReel">
+                        </a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav navbar-right">
+                           <li class="nav-active"><a href="#">Home</a></li>
+                            <li><a href="#">Browse Movies</a></li> 
+                            <li><a href="#"></a></li>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                    <span class="glyphicon glyphicon-user"></span>
+                                    <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                  <li><a href="#">My Profile</a></li>
+                                  <li><a href="watchlist.html">My Watchlist</a></li>
+                                  <li><a href="../index.html">Sign Out</a></li>
+                                </ul>
+                              </li>
+                            <li><a href="#"></a></li>
+                       </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        
+        <!-- MAIN -->
+        <main>
+            <div class="container">
+                
+                <div class="movieStuff panel panel-deafault col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="panel-heading">
+                        <h1>NAPOLEON DYNAMITE</h1>
+                    </div>
+                    <div class="panel-body col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <video width="100%" controls>
+                            <source src="../assets/filmTrailers/NapoleonDynamiteTrailer.mp4" type="video/mp4">
+				        </video>
+                    </div>
+                 </div>
+                
+                <div class="mightLike col-lg-12 col-md-12 col-sm-12 col-xs-12 panel panel-default">
+                    <div class="panel-heading">
+                        <h3>YOU MIGHT ALSO LIKE</h3>
+                    </div>
+                    <div class="panel-body col-lg-12">
+                        <div class="poster">
+                            <img src="../assets/Movies/SafetyNotGuaranteed_poster.png" class="col-lg-3 col-lg-offset-0 col-md-4 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-8 col-xs-offset-2">
+                        </div>
+                        <div class="poster">
+                            <img src="../assets/Movies/PulpFiction_poster.png" class="col-lg-3 col-lg-offset-0 col-md-4 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-8 col-xs-offset-2">
+                        </div>
+                        <div class="poster">
+                            <img src="../assets/Movies/BottleRocket_poster.png" class="col-lg-3 col-lg-offset-0 col-md-4 col-lg-offset-0 col-sm-6 col-sm-offset-0 hidden-xs">
+                        </div>
+                        <div class="poster">
+                            <img src="../assets/Movies/eternalSunshineOfTheSpotlessMind_poster.jpg" class="col-lg-3 col-lg-offset-0 hidden-md col-sm-6 col-sm-offset-0 hidden-xs">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+            
+        <!-- FOOTER -->
+        <footer class="container-fluid">
+            <div class="row">
+                <div id="left-foot" class="col-xs-4"></div>
+                <div id="mid-foot" class="col-xs-4">
+                    <h5>&copy;Indie Reel 2017</h5>
+                </div>
+                <div id="right-foot" class="col-sm-4 hidden-xs">
+                    <div class="social"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></div>
+                    <div class="social"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></div>
+                    <div class="social"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></div>
+                    <div class="social"><i class="fa fa-youtube-play fa-lg" aria-hidden="true"></i></div>
+                </div>
+            </div> 
+            
+            <!--FOOTER SCRIPTS-->
+            <script src="../js/jquery/1.12.0/jquery.min.js"></script>
+            <script src="../owlcarousel/owl.carousel.min.js"></script>
+                
+            <script>
+                $(document).ready(function(){
+                  $(".owl-carousel").owlCarousel({
+                      nav: true,
+                      loop: true
+                  });
+                });
+            </script>
+        </footer>
+    
+    </body>
+</html>

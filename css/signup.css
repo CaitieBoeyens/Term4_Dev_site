@@ -1,49 +1,28 @@
 /* FONTS */
 
 @font-face {
-    font-family: Regular;
-    src: url("../fonts/Raleway-Regular.ttf");
-    font-style: normal;
-    font-weight: normal;
+	font-family: 'Black';
+	src: url(../fonts/Raleway-Black.ttf);
+	font-style: normal;
+	font-weight: normal;
 }
 
-@font-face {
-    font-family: Black;
-    src: url("../fonts/Raleway-Black.ttf");
-    font-style: normal;
-    font-weight: normal;
-}
-
-@font-face {
-    font-family: Medium;
-    src: url("../fonts/Raleway-Medium.ttf");
-    font-style: normal;
-    font-weight: normal;
-}
-
-@font-face {
-    font-family: Light;
-    src: url("../fonts/Raleway-Light.ttf");
-    font-style: normal;
-    font-weight: normal;
-}
 
 /* GENERAL */
 
 body {
-    background-image: url(../assets/background.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     height: 900px;
     padding: 0px;
     margin: 0px;
 }
 
-p {
-    font-family: Regular;
+.mainContainer {
+    background-image: url(../assets/background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 900px;
 }
-
 
 /* HEADER */
 
@@ -87,7 +66,6 @@ main {
     height: 250px;
     width: 100%;
     color: #999999;
-    font-family: Regular;
 }
 
 .HD {
@@ -118,7 +96,7 @@ figcaption {
 
 .textDesciption p {
     padding: 80px 20px 0px 20px;
-    font-family: Regular;
+    color: #999999;
 }
 
 .login {
@@ -133,16 +111,15 @@ form {
 }
 
 form h1 {
-    font-family: Black;
     color: #682020;
     text-align: center;
     font-size: 45px;
+    font-family: Black;
 }
 
 input {
     display: block;
     width: 260px;
-    font-family: Light;
     text-align: center;
 }
 
@@ -168,7 +145,6 @@ input {
     width: 150px;
     margin-top: 40px;
     margin-left: 100px;
-    font-family: Light;
     text-align: center;
     background-color: #cd2a2c;
     color: white;
@@ -189,7 +165,6 @@ a:hover {
     text-align: center;
     margin-top: 70px;
     font-size: 12px;
-    font-family: Light;
 }
 
 
@@ -201,7 +176,6 @@ footer {
     background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1));
     padding: 0px;
     margin: 70px 0px 0px 0px;
-    font-family: Regular;
 }
 
 .copyright {
