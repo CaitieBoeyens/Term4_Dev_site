@@ -105,6 +105,10 @@ p {
     border-bottom: 3px solid #961f1e;
 }
 
+.drop-active {
+    background-color: #0e3d3a;
+}
+
 .navbar-brand {
     padding-top: 5px;
 }
