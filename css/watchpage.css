@@ -27,6 +27,13 @@
     margin: 0px;
 }
 
+/* VIDEO */
+
+progress {
+  background-color: pink;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
 
 /* MIGHT LIKE */
 
@@ -53,23 +60,43 @@
 
 /* OVERLAY */
 
-.container {
-  position: relative;
-}
-
 .overlay {
-  position: absolute;
-  background-size: cover;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  overflow: hidden;
-  height: 0;
-  transition: .5s ease;
+    padding: 2em;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
-.container:hover .overlay {
-  height: 60%;
+.overlay-name h4{
+    color: #e7e7e7;
 }
 
+.overlay-name {
+    padding-bottom: 0.5em;
+    border-bottom: 2px solid #e7e7e7;
+}
+
+.overlay-info h5, p {
+    color: #e7e7e7;
+}
+
+.overlay-info {
+    padding-bottom: 1em;
+    padding-top: 0.5em;
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 1.5s, opacity 0.3s;
+}
+
+.overlay-buttons {
+    padding: 1em  0;
+}
+@media (min-width: 768px) {
+    .mightLikeBody:hover .overlay .overlay-info {
+        max-height: 500px;
+        opacity: 1;
+    
+    }
+}
