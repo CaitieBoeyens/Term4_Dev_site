@@ -1,15 +1,5 @@
 /* GENERAL */
 
-.panel {
-    border-color: rgba(0, 0, 0, 0.5);
-    border: none;
-    padding: 0;
-}
-
-.panel-heading {
-    background-color: rgba(110, 110, 110, 0.3);
-}
-
 
 /* MOVIE STUFF */
 
@@ -18,26 +8,95 @@
     text-align: center
 }
 
+.well {
+    border: 0px;
+    border-radius: 0px;
+}
+
 .movieStuff h1 {
     font-size: 2.2em;
 }
 
+.movieHeader {
+    background-color: rgba(0, 0, 0, 0.5); 
+    margin: 0px;
+}
+
+.movieBody {
+    background-color: rgba(0, 0, 0, 0.5); 
+    margin: 0px;
+}
+
+/* VIDEO */
+
+progress {
+  background-color: pink;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
 
 /* MIGHT LIKE */
 
 .mightLike {
-    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
     margin-top: 30px;
     text-align: center;
+}
+
+.mightLikeHeader {
+    background-color: rgba(0, 0, 0, 0.5); 
+    margin: 0px;
+}
+
+.mightLikeBody {
+    background-color: rgba(255, 0, 0, 0.5);
+    height: 100%;
 }
 
 .poster { 
     margin-top: 20px;
 }
 
-.mightLike panel-heading {
-    background-color: rgba(110, 110, 110, 0.3);
+
+/* OVERLAY */
+
+.overlay {
+    padding: 2em;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
+.overlay-name h4{
+    color: #e7e7e7;
+}
 
+.overlay-name {
+    padding-bottom: 0.5em;
+    border-bottom: 2px solid #e7e7e7;
+}
 
+.overlay-info h5, p {
+    color: #e7e7e7;
+}
+
+.overlay-info {
+    padding-bottom: 1em;
+    padding-top: 0.5em;
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 1.5s, opacity 0.3s;
+}
+
+.overlay-buttons {
+    padding: 1em  0;
+}
+@media (min-width: 768px) {
+    .mightLikeBody:hover .overlay .overlay-info {
+        max-height: 500px;
+        opacity: 1;
+    
+    }
+}
