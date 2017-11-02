@@ -46,18 +46,33 @@
     height: 100%;
 }
 
-.poster { 
+.poster1 { 
     margin-top: 20px;
+    background-image: url(../assets/Movies/SafetyNotGuaranteed_poster.png);
 }
+
+.poster2 { 
+    margin-top: 20px;
+    background-image: url(../assets/Movies/PulpFiction_poster.png);
+}
+
+.poster3 { 
+    margin-top: 20px;
+    background-image: url(../assets/Movies/BottleRocket_poster.png);
+}
+
+.poster4 { 
+    margin-top: 20px;
+    background-image: url(../assets/Movies/eternalSunshineOfTheSpotlessMind_poster.jpg);
+}
+
 
 
 /* OVERLAY */
 
-/*
-
 .overlay {
     padding: 2em;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 0, 0, 0.5);
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -96,4 +111,3 @@
     }
 }
 
-*/

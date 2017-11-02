@@ -3,7 +3,7 @@ $(function() {
     $(function appendAllMovies()
     {
         $(films).each(function(){
-            $("#.mightLikeBody").append(`
+            $(".mightLikeBody").append(`
             <div class="movie col-xs-12 col-sm-12">
                 <div id="${this.id}" class="movie-block" data-year="${this.year}" data-genre="${this.type}" data-imdb="${this.Imdb}" data-reels="${this.reels}">
                     <div class="overlay">
