@@ -49,29 +49,21 @@
 #poster1 { 
     margin-top: 20px;
     background-image: url(../assets/Movies/SafetyNotGuaranteed_poster.png);
-    background-size: 100%;
-    background-position: center;
 }
 
 #poster2 { 
     margin-top: 20px;
     background-image: url(../assets/Movies/PulpFiction_poster.png);
-    background-size: 100%;
-    background-position: center;
 }
 
 #poster3 { 
     margin-top: 20px;
     background-image: url(../assets/Movies/BottleRocket_poster.png);
-    background-size: 100%;
-    background-position: center;
 }
 
 #poster4 { 
     margin-top: 20px;
     background-image: url(../assets/Movies/eternalSunshineOfTheSpotlessMind_poster.jpg);
-    background-size: 100%;
-    background-position: center;
 }
 
 
