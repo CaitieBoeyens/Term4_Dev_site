@@ -66,11 +66,23 @@
     background-image: url(../assets/Movies/eternalSunshineOfTheSpotlessMind_poster.jpg);
 }
 
+.poster-block {
+    height: 500px;
+    position: relative;
+    background-size: 100%;
+    background-position: center;
+}
+@media (max-width: 768px) {
+    .poster-block {
+        height: 35vh;
+        margin-bottom: 1.5em;
+    }
+}
 
 
 /* OVERLAY */
 
-/*
+
 
 .overlay {
     padding: 2em;
@@ -112,5 +124,3 @@
     
     }
 }
-
-*/
