@@ -32,61 +32,90 @@
 
 /* MIGHT LIKE */
 
-.mightLike {
+.might-like {
     margin-top: 30px;
     text-align: center;
 }
 
-.mightLikeHeader {
+.might-like-header {
     background-color: rgba(0, 0, 0, 0.5); 
     margin: 0px;
 }
 
-.mightLikeBody {
-    height: 100%;
-}
-
 #poster1 { 
-    margin-top: 20px;
+    
     background-image: url(../assets/Movies/SafetyNotGuaranteed_poster.png);
 }
 
 #poster2 { 
-    margin-top: 20px;
+    
     background-image: url(../assets/Movies/PulpFiction_poster.png);
 }
 
 #poster3 { 
-    margin-top: 20px;
+    
     background-image: url(../assets/Movies/BottleRocket_poster.png);
 }
 
 #poster4 { 
-    margin-top: 20px;
+    
     background-image: url(../assets/Movies/eternalSunshineOfTheSpotlessMind_poster.jpg);
 }
 
-.poster-block {
+/* MIGHT LIKE MOVIES */
+
+.movie-block {
+    margin-top: 20px;
     height: 500px;
     position: relative;
     background-size: 100%;
     background-position: center;
+    padding: 0;
 }
 @media (max-width: 768px) {
-    .poster-block {
+    .movie-block {
         height: 35vh;
         margin-bottom: 1.5em;
     }
 }
 
+.movie {
+    padding: 0;
+    margin-right: auto;
+}
+
+/*MOVIES*/
+
+.info {
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 75px;
+    width: 100%;
+    padding: 20px;
+    bottom: 0;
+    position: absolute;
+    padding-right: 40px;
+}
+
+.info h4{
+    color: white;
+    float: left;
+}
+
+.movie-btn {
+    width: 30px;
+    float: right;
+    margin-right: 20px;
+}
+
+.movie-btn img{
+    width: 100%;
+}
 
 /* OVERLAY */
 
-
-
 .overlay {
     padding: 2em;
-    background-color: rgba(255, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -118,7 +147,7 @@
     padding: 1em  0;
 }
 @media (min-width: 768px) {
-    .mightLikeBody:hover .overlay .overlay-info {
+    .movie-block:hover .overlay .overlay-info {
         max-height: 500px;
         opacity: 1;
     

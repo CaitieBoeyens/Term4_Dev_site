@@ -69,37 +69,97 @@
         <main>
             <div class="container">
                 
-                <div class="movieStuff col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="movieStuff col-xs-12">
                     <div class="movieHeader well well-sm">
                         <h1>NAPOLEON DYNAMITE</h1>
                     </div>
-                    <div class="movieBody col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="movieBody col-xs-12">
                         <video width="100%" controls>
                             <source src="../assets/filmTrailers/NapoleonDynamiteTrailer.mp4" type="video/mp4">
 				        </video>
                     </div>
                  </div>
                 
-                <div class="mightLike col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="mightLikeHeader col-lg-12 well well-sm">
+                <div class="might-like col-xs-12">
+                    <div class="might-like-header col-lg-12 well well-sm">
                         <h3>YOU MIGHT ALSO LIKE</h3>
                     </div>
-                    <div class="mightLikeBody col-lg-12">
-                        <div id="poster1" class="poster-block col-lg-3 col-lg-offset-0 col-md-4 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1">
-                            <div class="overlay"></div>
-                        </div>
-                        <div id="poster2" class="poster-block col-lg-3 col-lg-offset-0 col-md-4 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1">
-                            <div class="overlay"></div>
-                         </div>
-                        <div id="poster3" class="poster-block col-lg-3 col-lg-offset-0 col-md-4 col-lg-offset-0 col-sm-6 col-sm-offset-0 hidden-xs">
-                            <div class="overlay"></div>
-                        </div>
-                        <div id="poster4" class="poster-block col-lg-3 col-lg-offset-0 hidden-md col-sm-6 col-sm-offset-0 hidden-xs">
-                            <div class="overlay"></div>
-                        </div>
+                    <div class="row might-like-body col-lg-12">
+                        <div id="poster1" class="movie col-xs-12 col-sm-4">
+                            <div id="${this.id}" class="movie-block" data-year="${this.year}" data-genre="${this.type}" data-imdb="${this.Imdb}" data-reels="${this.reels}">
+                                <div class="overlay">
+                                    <div class="overlay-name">
+                                        <h4>${this.name}</h4>
+                                    </div>
+                                    <div class="overlay-info">
+                                        <h5>${this.type} | ${this.year} | IMDb: ${this.Imdb}/10 | ${this.reels} Reels</h5>
+                                        <p>${this.description}</p>
+                                    </div>
+                                    <div class="overlay-buttons">
+                                        <a href="">   
+                                            <div class="movie-btn" data-tooltip="More Info"><img  src="../assets/info.svg" alt="info"></div>
+                                        </a>
+                                        <a href="" >    
+                                            <div class="movie-btn" data-tooltip="Watch Now"><img  src="../assets/play.svg" alt="play"></div>
+                                        </a>
+                                        <a href="">
+                                            <div class="movie-btn" data-tooltip="Add to Watchlist"><img src="../assets/plus.svg" alt="plus"></div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!--POSTER1-->
+                        <div id="poster2" class="movie col-xs-12 col-sm-4">
+                            <div id="${this.id}" class="movie-block" data-year="${this.year}" data-genre="${this.type}" data-imdb="${this.Imdb}" data-reels="${this.reels}">
+                                <div class="overlay">
+                                    <div class="overlay-name">
+                                        <h4>${this.name}</h4>
+                                    </div>
+                                    <div class="overlay-info">
+                                        <h5>${this.type} | ${this.year} | IMDb: ${this.Imdb}/10 | ${this.reels} Reels</h5>
+                                        <p>${this.description}</p>
+                                    </div>
+                                    <div class="overlay-buttons">
+                                        <a href="">   
+                                            <div class="movie-btn" data-tooltip="More Info"><img  src="../assets/info.svg" alt="info"></div>
+                                        </a>
+                                        <a href="" >    
+                                            <div class="movie-btn" data-tooltip="Watch Now"><img  src="../assets/play.svg" alt="play"></div>
+                                        </a>
+                                        <a href="">
+                                            <div class="movie-btn" data-tooltip="Add to Watchlist"><img src="../assets/plus.svg" alt="plus"></div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!--POSTER2-->
+                        <div id="poster3" class="movie col-xs-12 col-sm-4">
+                            <div id="${this.id}" class="movie-block" data-year="${this.year}" data-genre="${this.type}" data-imdb="${this.Imdb}" data-reels="${this.reels}">
+                                <div class="overlay">
+                                    <div class="overlay-name">
+                                        <h4>${this.name}</h4>
+                                    </div>
+                                    <div class="overlay-info">
+                                        <h5>${this.type} | ${this.year} | IMDb: ${this.Imdb}/10 | ${this.reels} Reels</h5>
+                                        <p>${this.description}</p>
+                                    </div>
+                                    <div class="overlay-buttons">
+                                        <a href="">   
+                                            <div class="movie-btn" data-tooltip="More Info"><img  src="../assets/info.svg" alt="info"></div>
+                                        </a>
+                                        <a href="" >    
+                                            <div class="movie-btn" data-tooltip="Watch Now"><img  src="../assets/play.svg" alt="play"></div>
+                                        </a>
+                                        <a href="">
+                                            <div class="movie-btn" data-tooltip="Add to Watchlist"><img src="../assets/plus.svg" alt="plus"></div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!--POSTER3-->
                     </div>
                 </div>
-            </div>
+            </div><!--CONTAINER -->
         </main>
             
         <!-- FOOTER -->
