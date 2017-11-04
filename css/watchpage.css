@@ -5,7 +5,6 @@
 
 .movieStuff {
     background-color: rgba(0, 0, 0, 0);
-    text-align: center
 }
 
 .well {
@@ -27,7 +26,92 @@
     margin: 0px;
 }
 
+
+
+
+
 /* VIDEO */
+
+#videoContainer {
+    background-color: yellow;
+    width: 100%;
+    color: white;
+}
+
+#myVideo {
+    width: 100%;
+}
+
+#videoControlsBar {
+    background: red;
+    padding: 20px;
+    width: 500px;
+    display: inline;
+}
+
+button#playPauseBtn {
+    background: url(../assets/play.svg);
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    float: left; 
+}
+
+button {
+    border: none;
+}
+
+#seekslider {
+    width: 20%;
+    float: left; 
+}
+
+input[type='range'] {
+    -webkit-appearance: none !important;
+    background: #000;
+    border: #666 1px solid;
+    height: 4px;
+    
+}
+
+input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none !important;
+    background: pink;
+    height: 15px;
+    width: 15px;
+    border-radius: 100%;
+    cursor: pointer;
+    
+}
+
+#curTimeText {
+    float: left; 
+}
+
+#durTimeText {
+    float: left; 
+}
+
+#muteBtn {
+   float: left; 
+}
+
+#volumeslider {
+  width: 20%;  
+    float: left;
+}
+
+#fullscreenBtn {
+   float: left;
+}
+
+
+
+
+
+
+
+
 
 
 /* MIGHT LIKE */

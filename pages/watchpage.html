@@ -74,9 +74,33 @@
                         <h1>NAPOLEON DYNAMITE</h1>
                     </div>
                     <div class="movieBody col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <video width="100%" controls>
-                            <source src="../assets/filmTrailers/NapoleonDynamiteTrailer.mp4" type="video/mp4">
-				        </video>
+                        
+                        
+                        
+                        
+                        <div id="videoContainer">
+                           <!-- VIDEO -->
+                            <video id="myVideo" width="100%" >
+                                <source src="../assets/filmTrailers/NapoleonDynamiteTrailer.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+				            </video>
+                            
+                        
+                            <!-- VIDEO CONTROLS -->
+                            <div id="videoControlsBar">
+                                <button id="playPauseBtn"></button>
+                                <input id="seekslider" type="range" min="0" max="100" value="0" step="1">
+                                <span id="curTimeText"></span> / <span id="durTimeText"></span>
+                                <button id="muteBtn">Mute</button>
+                                <input id="volumeslider" type="range" min="0" max="100" value="100" step="1">
+                                <button id="fullscreenBtn">FS</button>
+                            
+                            </div>
+                        </div>
+                        
+                        
+                        
+                        
                     </div>
                  </div>
                 
