@@ -27,9 +27,6 @@
 }
 
 
-
-
-
 /* VIDEO */
 
 #videoContainer {
@@ -43,13 +40,13 @@
 }
 
 #videoControlsBar {
-    background: red;
+    background: lightblue;
     padding: 20px;
-    width: 500px;
-    display: inline;
+    width: 100%;
+    display: block;
 }
 
-button#playPauseBtn {
+#playPauseBtn {
     background: url(../assets/play.svg);
     height: 30px;
     width: 30px;
@@ -62,7 +59,9 @@ button {
 }
 
 #seekslider {
-    width: 20%;
+    background-color: white;
+    border-color: white;
+    width: 60%;
     float: left; 
 }
 
@@ -76,7 +75,7 @@ input[type='range'] {
 
 input[type='range']::-webkit-slider-thumb {
     -webkit-appearance: none !important;
-    background: pink;
+    background: #961f1e;
     height: 15px;
     width: 15px;
     border-radius: 100%;
@@ -93,25 +92,24 @@ input[type='range']::-webkit-slider-thumb {
 }
 
 #muteBtn {
-   float: left; 
+    background: url(../assets/mute.svg);
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    float: left; 
 }
 
 #volumeslider {
-  width: 20%;  
+    background-color: white;
+    border-color: white;
+  width: 15%;  
     float: left;
 }
 
 #fullscreenBtn {
+    background: url(../assets/frullscreen.svg);
    float: left;
 }
-
-
-
-
-
-
-
-
 
 
 /* MIGHT LIKE */
@@ -129,22 +127,21 @@ input[type='range']::-webkit-slider-thumb {
 #poster1 { 
     
     background-image: url(../assets/Movies/SafetyNotGuaranteed_poster.png);
+    margin-top: 10px;
 }
 
 #poster2 { 
     
     background-image: url(../assets/Movies/PulpFiction_poster.png);
+    margin-top: 10px;
 }
 
 #poster3 { 
     
     background-image: url(../assets/Movies/BottleRocket_poster.png);
+    margin-top: 10px;
 }
 
-#poster4 { 
-    
-    background-image: url(../assets/Movies/eternalSunshineOfTheSpotlessMind_poster.jpg);
-}
 
 /* MIGHT LIKE MOVIES */
 

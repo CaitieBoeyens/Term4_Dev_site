@@ -27,7 +27,7 @@ function playPause() {
     
     if(vid.paused) {
         vid.play();
-        playBtn.style.background = "url(../assets/pause.png)";
+        playBtn.style.background = "url(../assets/pause.svg)";
     } else {
         vid.pause();
         playBtn.style.background = "url(../assets/play.svg)";
@@ -65,7 +65,7 @@ function seekTimeUpdate() {
         durmins = "0"+durmins;
     }
     
-    curTimeText.innerHTML = curmins+":"+cursecs;
+    curTimeText.innerHTML = curmins+":"+cursecs+"/";
     durTimeText.innerHTML = durmins+":"+dursecs;
 }
 
@@ -73,10 +73,10 @@ function vidMute() {
     
     if(vid.muted) {
         vid.muted = false;
-        muteBtn.innerHTML = "Mute";
+        muteBtn.style.background = "url(../assets/mute.svg)";
     } else {
         vid.muted = true;
-        muteBtn.innerHTML = "Unmute";
+        muteBtn.style.background = "url(../assets/sound.svg)";
     }
 }
 
