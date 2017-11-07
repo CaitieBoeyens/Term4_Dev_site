@@ -35,7 +35,13 @@ $(function(){
                 </div>
             </div>
             `);
-            $(`#${this.id}`).css("background-image", `url("${this['img-path'] }")`);
+
+            if (window.matchMedia("(min-width: 768px)").matches) {
+                $(`#${this.id}`).css("background-image", `url("${this['img-path'] }")`);
+              } else {
+                $(`#${this.id}`).css("background-image", `url("${this['img-ban'] }")`);
+              }
+            
         });
     });
 
