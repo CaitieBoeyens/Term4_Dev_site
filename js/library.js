@@ -77,6 +77,9 @@ $(function(){
         function getIndieReelRating() {
             return $("input[name=reels]:checked", "#indie-reel-rating").val();
         }
+        function getImdbRating() {
+            return $("input[name=imdb]:checked", "#imdb-rating").val();
+        }
         // films is an array of film objects
         // genre is a string
         // indie_reel_rating is an integer
@@ -91,12 +94,16 @@ $(function(){
                 return (movie_year >= start_year && movie_year <= end_year);
             };
             const i_r_rating_match = function (movie) {
-                return movie.reels === indie_reel_rating;
+                return movie.reels >= indie_reel_rating;
+            }
+            const imdb_rating_match = function (movie) {
+                return movie.imdb >= imdb_rating;
             }
             const filtered_films = films
                                             .filter(genre_match)
                                             .filter(falls_within_year_range)
-                                            .filter(i_r_rating_match);
+                                            .filter(i_r_rating_match)
+                                            .filter(imdb_rating_match);
             return filtered_films;
         }
         $("#filter").click(function(){
@@ -105,6 +112,7 @@ $(function(){
             const start_year = date_range[0];
             const end_year = date_range[1];
             const indie_reel_rating = getIndieReelRating();
+            const imdb_rating = getImdbRating();
             //record each choice
             
             //filter according to the choices
