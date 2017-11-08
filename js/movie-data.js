@@ -141,7 +141,7 @@ const films = [
         "img-path": "../assets/Movies/MyOwnPrivateIdaho_poster.png",
         "img-ban": "../assets/Movies/myOwnPrivateIdaho_banner.jpg",
         "year":"1991",
-        "type": ["Thriller", "Drama"],
+        "type": "Thriller",
         "duration": "1h 42m",
         "Imdb": "7.1",
         "reels": "1",

@@ -64,10 +64,45 @@ select option:hover {
     margin-bottom: 1em;
 }
 
-#imdb-rating {
-    width: 240px;
-    margin: auto;
-}
+/* indie reel rating */
+#indie-reel-rating {
+    float: left;
+    overflow: hidden;
+    width: 100%;
+  }
+  #indie-reel-rating input[type=radio]:checked ~ label:after {
+    background: url("../assets/rating_selected.svg");
+  }
+  #indie-reel-rating input[type=radio] {
+    display: none;
+  }
+  #indie-reel-rating input[type=radio]:first-child + label {
+    padding-right: 0;
+  }
+  #indie-reel-rating:hover input[type=radio]:checked ~ label:after,
+  #indie-reel-rating label:after {
+    background: url("../assets/rating.svg");
+  }
+  #indie-reel-rating label {
+    box-sizing: border-box;
+    width: 24px;
+    margin-left: 15px;
+    float: right;
+    cursor: pointer;
+  }
+  #indie-reel-rating label:after {
+    display: block;
+    content: "";
+    width: 24px;
+    height: 24px;
+    float: right;
+    transition: all 0.25s;
+    background: url("../assets/rating.svg");
+  }
+  #indie-reel-rating label:hover:after,
+  #indie-reel-rating label:hover ~ label:after {
+    background: url("../assets/rating_selected.svg") !important;
+  }
 
 #view-mode {
     background-color: rgba(255, 255, 255, 0.5);
