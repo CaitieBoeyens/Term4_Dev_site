@@ -27,9 +27,9 @@ $(function(){
                             <a href="" >    
                                 <div class="movie-btn" data-tooltip="Watch Now"><img  src="../assets/play.svg" alt="play"></div>
                             </a>
-                            <a href="">
-                                <div class="movie-btn" data-tooltip="Add to Watchlist"><img src="../assets/plus.svg" alt="plus"></div>
-                            </a>
+            
+                                <div id="add-watchlist" class="movie-btn" data-tooltip="Add to Watchlist"><img src="../assets/plus.svg" alt="plus"></div>
+                            
                         </div>
                     </div>
                 </div>
@@ -72,4 +72,30 @@ $(function(){
             ticks: [0, 1, 2, 3, 4, 5],
             ticks_labels: ['Past', '1980', '1990', '2000', '2010', 'Future'],
             ticks_snap_bounds: 30 });
-});
+    
+    
+    
+    $("#filter").click(function(){
+        
+        
+        if($("#genre option:selected").text() == "Crime"){
+            $(".movie-block").hide();
+            $(".movie-block").each(function(){
+                if($(this).data("genre") == "Crime"){
+                    $(this).show();
+                }
+                
+            });
+            
+           } else if($("input[name='imdb']:checked").val() == 7 ){
+            $(".movie-block").hide();
+            $(".movie-block").each(function(){
+                if($(this).data("imdb") == 7){
+                    $(this).show();
+                }
+            })
+        }
+        
+        
+    });
+    

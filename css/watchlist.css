@@ -1,87 +1,28 @@
-.info {
-    background-color: rgba(0, 0, 0, 0.6);
-    height: 75px;
+.movie {
+    margin-bottom: 1em;
+}
+
+#header {
+    background-image: url(../assets/library_head.jpeg);
+    background-size: 100%;
+    background-position: center;
+}
+
+.banner-block {
+    background: #961f1e;
+    height: 400px;
     width: 100%;
-    padding: 20px;
-    bottom: 0;
-    position: absolute;
-    padding-right: 40px;
+    padding: 0;
 }
 
-.info h4{
-    color: white;
-    float: left;
-}
-
-.movie-btn {
-    width: 30px;
-    float: right;
-    margin-right: 20px;
-}
-
-.movie-btn img{
-    width: 100%;
-}
-
-#removal_1 img {
-    transform: rotate(45deg);
-}
-
-#removal2 img {
-    transform: rotate(45deg);
-}
-
-#removal3 img {
-    transform: rotate(45deg);
-}
-
-
-
-.watchlist-welcome {
+.library-welcome {
     background-color: rgba(110, 110, 110, 0.3); 
     text-align: center;
     margin-top: 1em;
     padding: 1.5em 10%;
     margin-bottom: 0;
-}
-
-.movie1 {
-    background-image: url(../assets/Movies/ApocalypseNowNow_banner.jpg);
-    background-size: 100%;
-    background-position: center;
-    height: 400px;
-        margin-top: 1em;
-    margin-bottom: 0;
     padding-top: 0.5em;
 }
-
-.movie2 {
-    background-image: url(../assets/Movies/eternalSunshineOfTheSpotlessMind_banner.jpg);
-    background-size: 100%;
-    background-position: center;
-    height: 400px;
-        margin-top: 1em;
-
-    margin-bottom: 0;
-    padding-top: 0.5em;
-}
-
-.movie3 {
-    background-image: url(../assets/Movies/bigFish_banner.jpg);
-    background-size: 100%;
-    background-position: center;
-    height: 400px;
-        margin-top: 1em;
-
-    margin-bottom: 0;
-    padding-top: 0.5em;
-
-}
-
-.watchlist-welcome p {
-    color: white;
-}
-
 
 /* FILTERS */
 
@@ -155,5 +96,91 @@ select option:hover {
     margin-bottom: 2em;
 }
 
+/*MOVIES*/
 
+.info {
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 75px;
+    width: 100%;
+    padding: 20px;
+    bottom: 0;
+    position: absolute;
+    padding-right: 40px;
+}
 
+.info h4{
+    color: white;
+    float: left;
+}
+
+.movie-btn {
+    width: 30px;
+    float: right;
+    margin-right: 20px;
+}
+
+.movie-btn img{
+    width: 100%;
+}
+
+#remove-btn img{
+    transform: rotate(45deg);
+    
+}
+
+/* OVERLAY */
+
+.overlay {
+    padding: 2em;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.overlay-name h4{
+    color: #e7e7e7;
+}
+
+.overlay-name {
+    padding-bottom: 0.5em;
+    border-bottom: 2px solid #e7e7e7;
+}
+
+.overlay-info h5, p {
+    color: #e7e7e7;
+}
+
+.overlay-info {
+    padding-bottom: 1em;
+    padding-top: 0.5em;
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 1.5s, opacity 0.3s;
+}
+
+.overlay-buttons {
+    padding: 1em  0;
+}
+@media (min-width: 768px) {
+    .movie-block:hover .overlay .overlay-info {
+        max-height: 500px;
+        opacity: 1;
+    
+    }
+}
+/* RECENT MOVIES */
+
+.movie-block {
+    height: 500px;
+    position: relative;
+    background-size: 100%;
+    background-position: center;
+}
+@media (max-width: 768px) {
+    .movie-block {
+        height: 35vh;
+        margin-bottom: 1.5em;
+    }
+}
