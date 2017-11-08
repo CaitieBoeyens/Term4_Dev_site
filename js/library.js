@@ -1,10 +1,4 @@
 $(function(){
-
-    // $(function() {
-    //     $("input").autocomplete({
-    //         source:[films.type]
-    //     }); 
-    // });
     
     $(function appendAllMovies()
     {

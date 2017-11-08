@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
     <head>
      
@@ -72,7 +73,28 @@
                              </div>                        
                      </div><!--BANNER-->
 
-                     <script src="../rating/rating.js"></script>
+                     
+                     <!-- <script>
+                     $( function() {
+                            var genreList = [
+                                "Comedy",
+                                "Mystery",
+                                "Horror",
+                                "Thriller",
+                                "Dystopian",
+                                "Drama",
+                                "Romance",
+                                "Crime",
+                                "Sci-fi",
+                                "Fantasy",
+                                "Adventure"
+                            ];
+   
+                            $( "#genre-list" ).autocomplete({
+                                source: genreList
+                            });
+                        } );
+                     </script> -->      <!-- AUTOCOMPLETE -->
                      
                      <div class="container content">
                          <div class="library-welcome col-xs-12">
@@ -83,6 +105,7 @@
                              <div class="row">
                                  <div class="col-xs-8 col-xs-offset-2 col-md-4 col-md-offset-2" id="genre">
                                      <h5>Genre</h5>
+                                     <!-- <input type="text" placeholder="Genre" id="genre-list"> -->
                                      <select aria-placeholder="genre" name="genre" id="genre">
                                          <option value="thriller">Thriller</option>
                                          <option value="comedy">Comedy</option>
@@ -113,39 +136,11 @@
                             <div class="row">
                                 <div class="col-xs-8 col-xs-offset-2 col-md-4 col-md-offset-2" id="reels">
                                     <h5>Indie Reel Rating</h5>
-                                    <input type="radio" name="reels" id="star1">
-                                    <label for="reels">1</label>
-                                    <input type="radio" name="reels" id="star2">
-                                    <label for="reels">2</label>
-                                    <input type="radio" name="reels" id="star3">
-                                    <label for="reels">3</label>
-                                    <input type="radio" name="reels" id="star4">
-                                    <label for="reels">4</label>
-                                    <input type="radio" name="reels" id="star5">
-                                    <label for="reels">5</label>
+                                    <div id="reels-rating" class="c-rating"></div>
                                 </div>
                                 <div class="col-xs-12 col-md-4" id="imdb">
                                         <h5>Imdb Rating</h5>
-                                        <input type="radio" name="imdb" id="star1">
-                                        <label for="imdb">1</label>
-                                        <input type="radio" name="imdb" id="star2">
-                                        <label for="imdb">2</label>
-                                        <input type="radio" name="imdb" id="star3">
-                                        <label for="imdb">3</label>
-                                        <input type="radio" name="imdb" id="star4">
-                                        <label for="imdb">4</label>
-                                        <input type="radio" name="imdb" id="star5">
-                                        <label for="imdb">5</label>
-                                        <input type="radio" name="imdb" id="star6">
-                                        <label for="imdb">6</label>
-                                        <input type="radio" name="imdb" id="star7">
-                                        <label for="imdb">7</label>
-                                        <input type="radio" name="imdb" id="star8">
-                                        <label for="imdb">8</label>
-                                        <input type="radio" name="imdb" id="star9">
-                                        <label for="imdb">9</label>
-                                        <input type="radio" name="imdb" id="star10">
-                                        <label for="imdb">10</label>
+                                        <div id="imdb-rating" class="c-rating"></div>
                                 </div>
                             </div> <!--ROW2-->
                             <div class="row">
@@ -166,6 +161,24 @@
                          </div> <!--ALL THE MOVIES GO HERE-->
                      </div>
             </div><!--CONTENT-->
+
+            <script src="../rating/rating.js"></script>
+            <script>// target element
+                var el = document.querySelector('#imdb-rating');
+                
+                // current rating, or initial rating
+                var currentRating = 0;
+                
+                // max rating, i.e. number of stars you want
+                var maxRating= 10;
+                
+                // callback to run after setting the rating
+                var callback = function(rating) { alert(rating); };
+                
+                // rating instance
+                var myRating = rating(el, currentRating, maxRating, callback);
+                
+                </script>
 
             <footer class="container-fluid">
                 
