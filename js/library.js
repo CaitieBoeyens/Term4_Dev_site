@@ -75,10 +75,10 @@ $(function(){
             return range_array;
         }
         function getIndieReelRating() {
-            return parseInt($("input[name=reels]:checked", "#indie-reel-rating").val());
+            return parseInt($("input[name=reels]:checked").val()) || 0;
         }
         function getImdbRating() {
-            return parseFloat($("input[name=imdb]:checked", "#imdb-rating").val());
+            return parseFloat($("input[name=imdb]:checked").val()) || 0;
         }
         // films is an array of film objects
         // genre is a string
