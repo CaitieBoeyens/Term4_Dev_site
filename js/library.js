@@ -75,10 +75,10 @@ $(function(){
             return range_array;
         }
         function getIndieReelRating() {
-            return $("input[name=reels]:checked", "#indie-reel-rating").val();
+            return parseInt($("input[name=reels]:checked", "#indie-reel-rating").val());
         }
         function getImdbRating() {
-            return $("input[name=imdb]:checked", "#imdb-rating").val();
+            return parseFloat($("input[name=imdb]:checked", "#imdb-rating").val());
         }
         // films is an array of film objects
         // genre is a string
@@ -94,11 +94,11 @@ $(function(){
                 return (movie_year >= start_year && movie_year <= end_year);
             };
             const i_r_rating_match = function (movie) {
-                return movie.reels >= indie_reel_rating;
-            }
+                return parseInt(movie.reels) >= indie_reel_rating;
+            };
             const imdb_rating_match = function (movie) {
-                return movie.imdb >= imdb_rating;
-            }
+                return parseFloat(movie.imdb) >= imdb_rating;
+            };
             const filtered_films = films
                                             .filter(genre_match)
                                             .filter(falls_within_year_range)
@@ -117,7 +117,7 @@ $(function(){
             
             //filter according to the choices
             //filterFilms(films, genre, indie_reel_rating, imdb_rating, start_year, end_year)
-            const filtered_films = filterFilms(films,genre_choice,indie_reel_rating,'',start_year,end_year);
+            const filtered_films = filterFilms(films,genre_choice,indie_reel_rating,imdb_rating,start_year,end_year);
             console.log(filtered_films);
             //use filtered films array to append data
         })
