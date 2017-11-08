@@ -79,23 +79,19 @@
                         
                         
                         
-                        <div id="videoContainer" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                           <!-- VIDEO -->
-                            <video id="myVideo" width="100%" >
+                        <div id="video-container">
+                            <!-- Video -->
+                            <video id="video" width="100%" controls>
                                 <source src="../assets/filmTrailers/NapoleonDynamiteTrailer.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-				            </video>
-                            
-                        
-                            <!-- VIDEO CONTROLS -->
-                            <div id="videoControlsBar" class="well well-lg col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                <button id="playPauseBtn"></button>
-                                <input id="seekslider" type="range" min="0" max="100" value="0" step="1">
-                                <span id="curTimeText"></span><span id="durTimeText"></span>
-                                <button id="muteBtn"></button>
-                                <input id="volumeslider" type="range" min="0" max="100" value="100" step="1">
-                                <button id="fullscreenBtn"></button>
-                            
+                                Your browser doesn't support HTML5 video.
+                            </video>
+                            <!-- Video Controls -->
+                            <div id="video-controls">
+                                <button type="button" id="play-pause">Play</button>
+                                <input type="range" id="seek-bar" value="0">
+                                <button type="button" id="mute">Mute</button>
+                                <input type="range" id="volume-bar" min="0" max="1" step="0.1" value="1">
+                                <button type="button" id="full-screen">Full-Screen</button>
                             </div>
                         </div>
                         
