@@ -90,10 +90,13 @@ $(function(){
                 const movie_year = parseInt(movie.year);
                 return (movie_year >= start_year && movie_year <= end_year);
             };
-            const 
+            const i_r_rating_match = function (movie) {
+                return movie.reels === indie_reel_rating;
+            }
             const filtered_films = films
                                             .filter(genre_match)
-                                            .filter(falls_within_year_range);
+                                            .filter(falls_within_year_range)
+                                            .filter(i_r_rating_match);
             return filtered_films;
         }
         $("#filter").click(function(){
