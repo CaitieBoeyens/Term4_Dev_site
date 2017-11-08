@@ -175,6 +175,7 @@ select option:hover {
     padding: 0.5em 10px;
     margin-top: 1.5em;
     margin-bottom: 2em;
+    outline: none;
 }
 
 /*MOVIES*/

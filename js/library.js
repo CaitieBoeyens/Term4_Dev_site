@@ -4,13 +4,13 @@ $(function(){
         $(films).each(function(){
             $("#all_movie_container").append(`
             <div id="container-${this.id}" class="movie col-xs-12 col-sm-4">
-                <div id="${this.id}" class="movie-block" data-year="${this.year}" data-genre="${this.type}" data-imdb="${this.Imdb}" data-reels="${this.reels}">
+                <div id="${this.id}" class="movie-block" data-year="${this.year}" data-genre="${this.type}" data-imdb="${this.imdb}" data-reels="${this.reels}">
                     <div class="overlay">
                         <div class="overlay-name">
                             <h4>${this.name}</h4>
                         </div>
                         <div class="overlay-info">
-                            <h5>${this.type} | ${this.year} | IMDb: ${this.Imdb}/10 | ${this.reels} Reels</h5>
+                            <h5>${this.type} | ${this.year} | IMDb: ${this.imdb}/10 | ${this.reels} Reels</h5>
                             <p>${this.description}</p>
                         </div>
                         <div class="overlay-buttons">
@@ -106,6 +106,18 @@ $(function(){
                                             .filter(imdb_rating_match);
             return filtered_films;
         }
+
+        function hideAllMovies() {
+            $(films).each(function() {
+                $("#container-"+this.id).fadeOut();
+            });
+        }
+        function unhideMatchingMovies(filtered_films) {
+            $(filtered_films).each(function() {
+                $("#container-"+this.id).fadeIn();
+            });
+        }
+
         $("#filter").click(function(){
             const genre_choice = getGenreChoice();
             const date_range = getDateRange();
@@ -114,11 +126,13 @@ $(function(){
             const indie_reel_rating = getIndieReelRating();
             const imdb_rating = getImdbRating();
             //record each choice
-            
             //filter according to the choices
             //filterFilms(films, genre, indie_reel_rating, imdb_rating, start_year, end_year)
             const filtered_films = filterFilms(films,genre_choice,indie_reel_rating,imdb_rating,start_year,end_year);
+            
             console.log(filtered_films);
+            hideAllMovies();
+            unhideMatchingMovies(filtered_films);
             //use filtered films array to append data
         })
 });
