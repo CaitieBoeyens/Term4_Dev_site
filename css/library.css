@@ -64,10 +64,86 @@ select option:hover {
     margin-bottom: 1em;
 }
 
+/* indie reel rating */
+#indie-reel-rating {
+    float: left;
+    overflow: hidden;
+    width: 100%;
+    padding-right: 25%;
+  }
+  #indie-reel-rating input[type=radio]:checked ~ label:after {
+    background: url("../assets/rating_selected.svg");
+  }
+  #indie-reel-rating input[type=radio] {
+    display: none;
+  }
+  #indie-reel-rating input[type=radio]:first-child + label {
+    padding-right: 0;
+  }
+  #indie-reel-rating:hover input[type=radio]:checked ~ label:after,
+  #indie-reel-rating label:after {
+    background: url("../assets/rating.svg");
+  }
+  #indie-reel-rating label {
+    box-sizing: border-box;
+    width: 24px;
+    margin-left: 15px;
+    float: right;
+    cursor: pointer;
+  }
+  #indie-reel-rating label:after {
+    display: block;
+    content: "";
+    width: 24px;
+    height: 24px;
+    float: right;
+    transition: all 0.25s;
+    background: url("../assets/rating.svg");
+  }
+  #indie-reel-rating label:hover:after,
+  #indie-reel-rating label:hover ~ label:after {
+    background: url("../assets/rating_selected.svg") !important;
+  }
+
+  /* Imdb rating */
 #imdb-rating {
-    width: 240px;
-    margin: auto;
-}
+    float: left;
+    overflow: hidden;
+    width: 100%;
+  }
+  #imdb-rating input[type=radio]:checked ~ label:after {
+    background: url("../assets/clickstar.svg");
+  }
+  #imdb-rating input[type=radio] {
+    display: none;
+  }
+  #imdb-rating input[type=radio]:first-child + label {
+    padding-right: 0;
+  }
+  #imdb-rating:hover input[type=radio]:checked ~ label:after,
+  #imdb-rating label:after {
+    background: url("../assets/blankstar.svg");
+  }
+  #imdb-rating label {
+    box-sizing: border-box;
+    width: 24px;
+    margin-left: 10px;
+    float: right;
+    cursor: pointer;
+  }
+  #imdb-rating label:after {
+    display: block;
+    content: "";
+    width: 24px;
+    height: 24px;
+    float: right;
+    transition: all 0.25s;
+    background: url("../assets/blankstar.svg");
+  }
+  #imdb-rating label:hover:after,
+  #imdb-rating label:hover ~ label:after {
+    background: url("../assets/clickstar.svg") !important;
+  }
 
 #view-mode {
     background-color: rgba(255, 255, 255, 0.5);
