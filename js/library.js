@@ -75,36 +75,7 @@ $(function(){
     
     
     
-        
     
-    
-    
-    
-  /* if(localStorage){
-        $(document).ready(function(){
-            
-            
-            $("#film1").each(function(){
-                
-                $(this).click(function(){
-                
-                    $(this).children("img").css({"transform" : "rotate(45deg)"});
-                    $(this).attr("data-tooltip", "Remove from Watchlist");
-                    
-            
-                    var index = $(this).parent("overlay-buttons").parent("overlay").parent(".movie-block").attr("id");
-            
-                    localStorage.setItem("numberFilm", index);
-            
-                    console.log(index);
-                
-                });
-                
-            });  
-        });
-        
-        
-    };*/
     
     
         
