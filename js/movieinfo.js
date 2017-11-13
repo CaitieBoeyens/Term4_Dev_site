@@ -31,32 +31,34 @@ $(function(){
     
     function appendChosenMovie(movie){
         $("#movie_info_container").append(`
-        <div class="movie col-xs-12 col-sm-4">
-            <div id="${movie.id}" class="movie-block" data-year="${movie.year}" data-genre="${movie.type}" data-imdb="${movie.Imdb}" data-reels="${movie.reels}">
-                    <div id="header" class="item col-xs-12 banner-block">
-                    </div>
+        
+            <div id="${movie.id}" data-year="${movie.year}" data-genre="${movie.type}" data-imdb="${movie.Imdb}" data-reels="${movie.reels}">
+                <div class="banner container-fluid hidden-sm-hidden-xs">
 
-                    <div class="overlay">
-                    <div class="library-welcome">
-                        <h1>${movie.name}</h1>
-                    </div>
-                    <div class="overlay-info">
-                        <h5>${movie.type} | ${movie.year} | IMDb: ${movie.imdb}/10 | ${movie.reels} Reels</h5>
-                        <p>${movie.description}</p>
-                    </div>
-                    <div class="overlay-buttons">
-                        <a href="../pages/movieinfo.html?id=${movie.id}">   
-                            <div class="movie-btn" data-tooltip="More Info"><img  src="../assets/info.svg" alt="info"></div>
-                        </a>
-                        <a href="../pages/watchpage.html?id=${movie.id}" >    
-                            <div class="movie-btn" data-tooltip="Watch Now"><img  src="../assets/play.svg" alt="play"></div>
-                        </a>
-                        <a href="../pages/watchlist.html">
-                            <div class="movie-btn" data-tooltip="Add to Watchlist"><img src="../assets/plus.svg" alt="plus"></div>
-                        </a>
+                    <div id="header" class="item col-xs-12 banner-block">
+                        
                     </div>
                 </div>
-            </div>
+
+                    <div class="container content">
+                    <div class="library-welcome col-xs-12">
+                        <h1>${movie.name}</h1>
+                    </div>
+                    <div class="filters col-xs-12">
+
+                        <div class="row">
+
+                        </div>
+
+                        <div class="row">
+
+                            <div class="col-xs-12 col-md-6 col-md-offset-3" id="description>
+                                <h6>${movie.type} | ${movie.year} | IMDb: ${movie.imdb}/10 | ${movie.reels} Reels</h6>
+                                <p>${movie.description}</p>
+                            </div>
+                    
+                        </div>
+                    </div>
         </div>
         `);
         if (window.matchMedia("(min-width: 768px)").matches) {
