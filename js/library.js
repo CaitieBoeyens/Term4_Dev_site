@@ -28,7 +28,7 @@ $(function(){
                                 <div class="movie-btn" data-tooltip="Watch Now"><img  src="../assets/play.svg" alt="play"></div>
                             </a>
             
-                                <div id="add-watchlist" class="movie-btn" data-tooltip="Add to Watchlist"><img src="../assets/plus.svg" alt="plus"></div>
+                                <div id="${this.id}" class="movie-btn" data-tooltip="Add to Watchlist"><img src="../assets/plus.svg" alt="plus"></div>
                             
                         </div>
                     </div>
@@ -75,26 +75,38 @@ $(function(){
     
     
     
-    $("#filter").click(function(){
         
-        
-        if($("#genre option:selected").text() == "Crime"){
-            $(".movie-block").hide();
-            $(".movie-block").each(function(){
-                if($(this).data("genre") == "Crime"){
-                    $(this).show();
-                }
-                
-            });
+    
+    
+    
+    
+  /* if(localStorage){
+        $(document).ready(function(){
             
-           } else if($("input[name='imdb']:checked").val() == 7 ){
-            $(".movie-block").hide();
-            $(".movie-block").each(function(){
-                if($(this).data("imdb") == 7){
-                    $(this).show();
-                }
-            })
-        }
+            
+            $("#film1").each(function(){
+                
+                $(this).click(function(){
+                
+                    $(this).children("img").css({"transform" : "rotate(45deg)"});
+                    $(this).attr("data-tooltip", "Remove from Watchlist");
+                    
+            
+                    var index = $(this).parent("overlay-buttons").parent("overlay").parent(".movie-block").attr("id");
+            
+                    localStorage.setItem("numberFilm", index);
+            
+                    console.log(index);
+                
+                });
+                
+            });  
+        });
+        
+        
+    };*/
+    
+    
         
         
     });
