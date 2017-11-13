@@ -252,7 +252,7 @@ select option:hover {
 }
 @media (max-width: 768px) {
     .movie-block {
-
+        height: 35vh;
         margin-bottom: 1.5em;
     }
 }
