@@ -21,15 +21,15 @@ $(function(){
                             <p>${this.description}</p>
                         </div>
                         <div class="overlay-buttons">
-                            <a href="">   
+                            <a href="../pages/movieinfo.html?id=${this.id}">   
                                 <div class="movie-btn" data-tooltip="More Info"><img  src="../assets/info.svg" alt="info"></div>
                             </a>
-                            <a href="" >    
+                            <a href="../pages/watchpage.html?id=${this.id}" >    
                                 <div class="movie-btn" data-tooltip="Watch Now"><img  src="../assets/play.svg" alt="play"></div>
                             </a>
-            
-                                <div id="${this.id}" class="movie-btn" data-tooltip="Add to Watchlist"><img src="../assets/plus.svg" alt="plus"></div>
-                            
+                            <a href="../pages/watchlist.html">
+                                <div class="movie-btn" data-tooltip="Add to Watchlist"><img src="../assets/plus.svg" alt="plus"></div>
+                            </a>
                         </div>
                     </div>
                 </div>

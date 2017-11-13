@@ -24,7 +24,13 @@
 .movieBody {
     background-color: rgba(0, 0, 0, 0.5); 
     margin: 0px;
+    padding: 10px;
 }
+
+
+
+
+
 
 
 /* VIDEO */
@@ -35,81 +41,56 @@
     color: white;
 }
 
-#myVideo {
+#video {
     width: 100%;
 }
 
-#videoControlsBar {
-    background: lightblue;
-    padding: 20px;
-    width: 100%;
-    display: block;
+#video-controls {
+    background-color: pink;
+    color: wite;
 }
 
-#playPauseBtn {
-    background: url(../assets/play.svg);
-    height: 30px;
-    width: 30px;
-    cursor: pointer;
-    float: left; 
+#play-pause {
+    margin-top: 5px;
+    margin-left: 5px;
+    float: left;
+    width: 5%;
+    background: #145654;
+    border-color: #196656;
 }
 
-button {
-    border: none;
-}
-
-#seekslider {
-    background-color: white;
-    border-color: white;
-    width: 60%;
-    float: left; 
-}
-
-input[type='range'] {
-    -webkit-appearance: none !important;
-    background: #000;
-    border: #666 1px solid;
-    height: 4px;
-    
-}
-
-input[type='range']::-webkit-slider-thumb {
-    -webkit-appearance: none !important;
-    background: #961f1e;
-    height: 15px;
-    width: 15px;
-    border-radius: 100%;
-    cursor: pointer;
-    
-}
-
-#curTimeText {
-    float: left; 
-}
-
-#durTimeText {
-    float: left; 
-}
-
-#muteBtn {
-    background: url(../assets/mute.svg);
-    height: 30px;
-    width: 30px;
-    cursor: pointer;
-    float: left; 
-}
-
-#volumeslider {
-    background-color: white;
-    border-color: white;
-  width: 15%;  
+#seek-bar {
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 65%;
     float: left;
 }
 
-#fullscreenBtn {
-    background: url(../assets/frullscreen.svg);
-   float: left;
+#mute {
+    margin-top: 5px;
+    margin-left: 10px;
+    float: left;
+    width: 5%;
+    background: #145654;
+    border-color: #196656;
 }
+
+#volume-bar {
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 10%;
+    float: left;
+}
+
+#full-screen {
+    margin-top: 5px;
+    margin-left: 10px;
+    float: left;
+    width: 10%;
+    background: #145654;
+    border-color: #196656;
+}
+
 
 
 /* MIGHT LIKE */

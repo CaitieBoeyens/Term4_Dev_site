@@ -3,7 +3,7 @@
 }
 
 #header {
-    background-image: url(../assets/library_head.jpeg);
+    background-image: url(../assets/Movies/ApocalypseNowNow_banner.jpg);
     background-size: 100%;
     background-position: center;
 }
@@ -39,9 +39,7 @@
 }
 
 
-#genre {
-    margin-bottom: 1em;
-}
+
 
 select {
     border-radius: 20px;
@@ -60,9 +58,7 @@ select option:hover {
     color: #ffffff; 
 }
 
-#year {
-    margin-bottom: 1em;
-}
+
 
 /* indie reel rating */
 #indie-reel-rating {
@@ -260,4 +256,12 @@ select option:hover {
         height: 35vh;
         margin-bottom: 1.5em;
     }
+}
+
+#description { 
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 0;
+    padding-top: 0.5em;
+	margin-left: 28em;
 }

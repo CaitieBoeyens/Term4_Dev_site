@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
     <head>
      
@@ -9,8 +10,6 @@
         <script src="../bootstrap/3.3.6/js/bootstrap.min.js"></script>
         
         <script src="https://use.fontawesome.com/12f8c02d0f.js"></script>
-
-        <link rel="stylesheet" href="../rating/rating.css">
 
         <link rel="stylesheet" href="../slider/bootstrap-slider.css">
         <script src="../slider/bootstrap-slider.js"></script>
@@ -72,7 +71,27 @@
                              </div>                        
                      </div><!--BANNER-->
 
-                     <script src="../rating/rating.js"></script>
+                     <!-- <script>
+                     $( function() {
+                            var genreList = [
+                                "Comedy",
+                                "Mystery",
+                                "Horror",
+                                "Thriller",
+                                "Dystopian",
+                                "Drama",
+                                "Romance",
+                                "Crime",
+                                "Sci-fi",
+                                "Fantasy",
+                                "Adventure"
+                            ];
+   
+                            $( "#genre-list" ).autocomplete({
+                                source: genreList
+                            });
+                        } );
+                     </script> -->      <!-- AUTOCOMPLETE -->
                      
                      <div class="container content">
                          <div class="library-welcome col-xs-12">
@@ -83,6 +102,7 @@
                              <div class="row">
                                  <div class="col-xs-8 col-xs-offset-2 col-md-4 col-md-offset-2" id="genre">
                                      <h5>Genre</h5>
+                                     <!-- <input type="text" placeholder="Genre" id="genre-list"> -->
                                      <select aria-placeholder="genre" name="genre" id="genre">
                                          <option value="thriller">Thriller</option>
                                          <option value="comedy">Comedy</option>
@@ -113,6 +133,7 @@
                             <div class="row">
                                 <div class="col-xs-8 col-xs-offset-2 col-md-4 col-md-offset-2" id="reels">
                                     <h5>Indie Reel Rating</h5>
+<<<<<<< HEAD
                                     <input type="radio" name="reels" value="1" id="star1">
                                     <label for="reels">1</label>
                                     <input type="radio" name="reels" value="2" id="star2">
@@ -146,6 +167,46 @@
                                         <label for="imdb">9</label>
                                         <input type="radio" name="imdb" value="10" id="star10">
                                         <label for="imdb">10</label>
+=======
+                                    <span id="indie-reel-rating">
+                                        <input type="radio" name="reels" id="reel5" value="5">
+                                        <label for="reel5"></label>
+                                        <input type="radio" name="reels" id="reel4" value="4">
+                                        <label for="reel4"></label>
+                                        <input type="radio" name="reels" id="reel3" value="3">
+                                        <label for="reel3"></label>
+                                        <input type="radio" name="reels" id="reel2" value="2">
+                                        <label for="reel2"></label>
+                                        <input type="radio" name="reels" id="reel1" value="1">
+                                        <label for="reel1"></label>
+                                    </span>
+                                    
+                                </div>
+                                <div class="col-xs-12 col-md-4" id="imdb">
+                                        <h5>Imdb Rating</h5>
+                                        <span id="imdb-rating">
+                                            <input type="radio" name="imdb" id="star10" value="10">
+                                            <label for="star10"></label>
+                                            <input type="radio" name="imdb" id="star9" value="9">
+                                            <label for="star9"></label>
+                                            <input type="radio" name="imdb" id="star8" value="8">
+                                            <label for="star8"></label>
+                                            <input type="radio" name="imdb" id="star7" value="7">
+                                            <label for="star7"></label>
+                                            <input type="radio" name="imdb" id="star6" value="6">
+                                            <label for="star6"></label>
+                                            <input type="radio" name="imdb" id="star5" value="5">
+                                            <label for="star5"></label>
+                                            <input type="radio" name="imdb" id="star4" value="4">
+                                            <label for="star4"></label>
+                                            <input type="radio" name="imdb" id="star3" value="3">
+                                            <label for="star3"></label>
+                                            <input type="radio" name="imdb" id="star2" value="2">
+                                            <label for="star2"></label>
+                                            <input type="radio" name="imdb" id="star1" value="1">
+                                            <label for="star1"></label>
+                                        </span>
+>>>>>>> eebe26afd0a8d820367fb54a5e9436fa7c61ccef
                                 </div>
                             </div> <!--ROW2-->
                             <div class="row">
