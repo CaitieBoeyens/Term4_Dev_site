@@ -1,421 +1,267 @@
-body{
-    margin: 0;
-    padding:0;
-    background-color: darkgray;
-    margin-left: 15%;
-    
+.movie {
+    margin-bottom: 1em;
 }
 
-h1, h2, h3, h4, h5, h6{
-    margin: 0;
+#header {
+    background-image: url(../assets/Movies/ApocalypseNowNow_banner.jpg);
+    background-size: 100%;
+    background-position: center;
+}
+
+.banner-block {
+    background: #961f1e;
+    height: 400px;
+    width: 100%;
     padding: 0;
 }
 
-ul li{
-    width: 100px;
-    float: left;
-    list-style: none;
-    margin-top: 20px;
-
-}
-
-a{
-    text-decoration: none;
-    color: #c4c4c4;
-}
-
-.navigation a:hover{
-    cursor: pointer;
-    color: red;
-}
-
-.outer-page{
-    width: 1000px;
-    height:auto;
-    margin: auto;
-}
-
-.inner-box{
-    width: 750px;
-    height: inherit;
-    float: left;
-	background-color: black;
-}
-
-.navigation{
-    width: 750px;
-    height: 85px;
-}
-
-.logo{
-    width: 200px;
-    height: 85px;
-    background-color: #222222;
-    float: left;
-    padding: 0px;
-    margin: 0px;
-	margin-left: 80px;
-}
-
-.navigation{
-    width: 100px;
-    font-family: "Railway";
-    background-color: #222222;
-    display: inline;
-    margin-top: 7%;
-    font-size: 15px;   
-}
-
-.header{
-    width:750px;
-    height: 85px;
-    background-color: #222222;
-    color: lightcoral;
-    margin: 0px;
-    float: left;
-}
-
-
-
-#top-logo {
-    height: 75%;
-    width: 75%;
-    margin-top: 5%;   
-}
-
-
-.big_fish {
-	height: 100px;
-	width: 650px;
-	margin-top: 20px;
-	margin-left: 130px;
-	position: relative;
-}
-
-.big_fish image {
-	border-radius: 5px;
-}
-
-.more_about {
-	height: 90px;
-	width: 481px;
-	margin-top: 115px;
-	margin-left: 130px;
-	background-color: #bfbebf;
-	border-radius: 5px;
-	padding-top: 5px;
-}
-
-.movie_info_section {
-	height: 700px;
-	width: 481px;
-	background-color: #39393a;
-	float: left;
-	margin-left: 130px;
-	
-	margin-top: 125px;
-}
-
-.line {
-	height: 3px;
-	width: 400px;
-	background-color: #ffffff;
-	border-radius: 5px;
-	float: left;
-	margin-left: 40px;
-}
-
-.white_inner_box {
-	height: 100px;
-	width: 481px;
-	background-color: #b8b8b8;
-	float: left;
-	margin-top: 20px;
-}
-
-#icon_1 {
-	height: 20px;
-	width: 20px;
-	float: left;
-	margin-left: 250px;
-	margin-top: -14px;
-}
-
-#icon_2 {
-	height: 20px;
-	width: 20px;
-	float: left;
-	margin-left: 10px;
-	margin-top: -14px;
-}
-
-#icon_3 {
-	height: 20px;
-	width: 20px;
-	float: left;
-	margin-left: 10px;
-	margin-top: -14px;
-}
-
-#icon_4 {
-	height: 20px;
-	width: 20px;
-	float: left;
-	margin-left: 10px;
-	margin-top: -14px;
-}
-
-#icon_5 {
-	height: 20px;
-	width: 20px;
-	float: left;
-	margin-left: 10px;
-	margin-top: -14px;
-}
-
- h5 {
-	color: #961f1e;
-	font-family: "Railway";
-	padding-top: 20px;
-	padding-left: 100px;
-}
-
-h6 {
-	color: #cacaca;
-	text-align: left;
-	font-family:"Railway";
-	padding-top: 100px;
-	padding-left: 20px;
-	letter-spacing: 2px; 
-}
-
-.indie_reel_rating {
-	margin-left: 40px;
-}
-
-.IMDb_rating {
-	margin-left: 40px;
-}
-#stars_1 {
-	height: 20px;
-	width: 20px;
-	float: left;
-	margin-left: 250px;
-	margin-top: -14px;
-}
-
-#stars_2 {
-	height: 20px;
-	width: 20px;
-	float: left;
-	margin-left: 10px;
-	margin-top: -14px;
-}
-
-#stars_3 {
-	height: 20px;
-	width: 20px;
-	float: left;
-	margin-left: 10px;
-	margin-top: -14px;
-}
-
-#stars_4 {
-	height: 20px;
-	width: 20px;
-	float: left;
-	margin-left: 10px;
-	margin-top: -14px;
-}
-
-#stars_5 {
-	height: 20px;
-	width: 20px;
-	float: left;
-	margin-left: 10px;
-	margin-top: -14px;
-}
-
-.text_area {
-	margin-top: 50px;
-}
-
-.less_info {
-	margin-top: 80px;
-	margin-left: 190px;
-}
-
-.button {
-  	display: inline-block;
-  	border-radius: 4px;
-  	background-color: transparent;
-  	color: #FFFFFF;
-  	text-align: center;
-  	font-size: 15px;
-  	padding: 20px;
-  	width: 150px;
-  	transition: all 0.5s;
-  	cursor: pointer;
-  	margin: 5px;
-	margin-top: -30px;
-	margin-left: -20px;
-	opacity: 0.8;
-	border-color: white;
-	
-}
-
-.button span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-.button span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-
-.button:hover span {
-  padding-right: 25px;
-}
-
-.button:hover span:after {
-  opacity: 1;
-  right: 0;
-}
-
- h1 {
-	color: #961f1e;
-	 text-align: center;
-	 font-family: "Railway";
-	 padding-top: 20px;
-}
-
-h4 {
-	color: #961f1e;
-	text-align: center;
-	font-family: "Railway";
-	padding-top: 15px;
-}
-
-p {
-	color: #cacaca;
-	text-align: left;
-	font-family:"Railway";
-	padding-top: 20px;
-	padding-left: 20px;
-	letter-spacing: 2px;
-	font-size: 10px;
-}
-
-
-h3 {
-	color: white; 
-  	font-family: "Railway";   
-  	padding: 10px;
-	font-size: 15px;
-	padding-left: 165px;
-	padding-top: 30px;
-
-}
-
-.footers {
-    background-color: #222222;
-    padding: 0px;
-    margin-top: 30%;
-    height: 50px;
-    width: 750px;
-    float: left;   
-}
-
-.foot_1 {
-    margin: 0px;
-    padding: 0px;
-    width: 250px;
-    height: 50px;
-    float: left;   
-}
-
-.foot_2 {
-    color: #5d5d5d;
-    font-size: 10px;
-    height: 50px;
-    width: 250px;
-    float: left;
-    font-family: "Railway";
+.library-welcome {
+    background-color: rgba(110, 110, 110, 0.3); 
     text-align: center;
-	margin-top: 17px;
+    margin-top: 1em;
+    padding: 1.5em 10%;
+    margin-bottom: 0;
+    padding-top: 0.5em;
 }
 
-.foot_3 {
-    width: 75px;
-    height: 50px;
+/* FILTERS */
+
+.filters {
+    background-color: rgba(0, 0, 0, 0.5); 
+    text-align: center;
+    margin-bottom: 1em;
+    padding: 2em 0;
+    margin-top: 0;
+}
+
+.filters h5 {
+    color: #961f1e;
+}
+
+
+
+
+select {
+    border-radius: 20px;
+    width: 80%;
+    padding: 0.2em 10px;
+    color: #145654;
+    outline: 0;
+}
+
+label {
+    color: #bebebe;
+}
+
+select option:hover {
+    background-color:#145654;
+    color: #ffffff; 
+}
+
+
+
+/* indie reel rating */
+#indie-reel-rating {
     float: left;
-    margin: 0px;
-    padding: 0px;   
-}
+    overflow: hidden;
+    width: 100%;
+    padding-right: 25%;
+  }
+  #indie-reel-rating input[type=radio]:checked ~ label:after {
+    background: url("../assets/rating_selected.svg");
+  }
+  #indie-reel-rating input[type=radio] {
+    display: none;
+  }
+  #indie-reel-rating input[type=radio]:first-child + label {
+    padding-right: 0;
+  }
+  #indie-reel-rating:hover input[type=radio]:checked ~ label:after,
+  #indie-reel-rating label:after {
+    background: url("../assets/rating.svg");
+  }
+  #indie-reel-rating label {
+    box-sizing: border-box;
+    width: 24px;
+    margin-left: 15px;
+    float: right;
+    cursor: pointer;
+  }
+  #indie-reel-rating label:after {
+    display: block;
+    content: "";
+    width: 24px;
+    height: 24px;
+    float: right;
+    transition: all 0.25s;
+    background: url("../assets/rating.svg");
+  }
+  #indie-reel-rating label:hover:after,
+  #indie-reel-rating label:hover ~ label:after {
+    background: url("../assets/rating_selected.svg") !important;
+  }
 
-.foot_4 {
-    padding: 0px;
-    width: 35px;
-    height: 50px;
+  /* Imdb rating */
+#imdb-rating {
     float: left;
-    margin-top: 1%;    
-}
+    overflow: hidden;
+    width: 100%;
+  }
+  #imdb-rating input[type=radio]:checked ~ label:after {
+    background: url("../assets/clickstar.svg");
+  }
+  #imdb-rating input[type=radio] {
+    display: none;
+  }
+  #imdb-rating input[type=radio]:first-child + label {
+    padding-right: 0;
+  }
+  #imdb-rating:hover input[type=radio]:checked ~ label:after,
+  #imdb-rating label:after {
+    background: url("../assets/blankstar.svg");
+  }
+  #imdb-rating label {
+    box-sizing: border-box;
+    width: 24px;
+    margin-left: 10px;
+    float: right;
+    cursor: pointer;
+  }
+  #imdb-rating label:after {
+    display: block;
+    content: "";
+    width: 24px;
+    height: 24px;
+    float: right;
+    transition: all 0.25s;
+    background: url("../assets/blankstar.svg");
+  }
+  #imdb-rating label:hover:after,
+  #imdb-rating label:hover ~ label:after {
+    background: url("../assets/clickstar.svg") !important;
+  }
 
-.foot_4 img {
-    height: 40%;
+#view-mode {
+    background-color: rgba(255, 255, 255, 0.5);
     width: 50%;
-    float: left;
-    margin-top: 15%;
+    border-radius: 5px 5px 5px 5px;
+    padding-top: 0.1em;
+    padding-bottom: 0.4em;
+    margin: auto;
+    margin-top: 0.5em;
+
 }
 
-.foot_5 {
-    padding: 0px;
-    width: 35px;
-    height: 50px;
-    float: left;
-    margin-top: 1%;    
+#view-mode h5{
+    color: #145654;
 }
 
-.foot_5 img {
-    height: 40%;
-    width: 50%;
-    float: left;
-    margin-top: 15%;
+#view-mode img {
+    display: inline-block;
+    width: 30px;
+    cursor: pointer;
 }
 
-.foot_6 {
-    padding: 0px;
-    width: 35px;
-    height: 50px;
-    float: left;
-    margin-top: 1%;    
+#filter {
+    width: 35%;
+    background-color: #145654;
+    color: #ffffff;
+    border-radius: 20px;
+    border: none;
+    padding: 0.5em 10px;
+    margin-top: 1.5em;
+    margin-bottom: 2em;
+    outline: none;
 }
 
-.foot_6 img {
-    height: 40%;
-    width: 50%;
-    float: left;
-    margin-top: 15%;
+/*MOVIES*/
+
+.info {
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 75px;
+    width: 100%;
+    padding: 20px;
+    bottom: 0;
+    position: absolute;
+    padding-right: 40px;
 }
 
-.foot_7 {
-    padding: 0px;
-    width: 35px;
-    height: 50px;
+.info h4{
+    color: white;
     float: left;
-    margin-top: 1%;    
 }
 
-.foot_7 img {
-    height: 40%;
-    width: 50%;
-    float: left;
-    margin-top: 15%;
+.movie-btn {
+    width: 30px;
+    float: right;
+    margin-right: 20px;
+}
+
+.movie-btn img{
+    width: 100%;
+}
+
+/* OVERLAY */
+
+.overlay {
+    padding: 2em;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.overlay-name h4{
+    color: #e7e7e7;
+}
+
+.overlay-name {
+    padding-bottom: 0.5em;
+    border-bottom: 2px solid #e7e7e7;
+}
+
+.overlay-info h5, p {
+    color: #e7e7e7;
+}
+
+.overlay-info {
+    padding-bottom: 1em;
+    padding-top: 0.5em;
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 1.5s, opacity 0.3s;
+}
+
+.overlay-buttons {
+    padding: 1em  0;
+}
+@media (min-width: 768px) {
+    .movie-block:hover .overlay .overlay-info {
+        max-height: 500px;
+        opacity: 1;
+    
+    }
+}
+/* RECENT MOVIES */
+
+.movie-block {
+    height: 500px;
+    position: relative;
+    background-size: 100%;
+    background-position: center;
+}
+@media (max-width: 768px) {
+    .movie-block {
+        height: 35vh;
+        margin-bottom: 1.5em;
+    }
+}
+
+#description { 
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 0;
+    padding-top: 0.5em;
+	margin-left: 28em;
 }

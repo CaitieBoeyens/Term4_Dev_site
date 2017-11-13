@@ -14,10 +14,10 @@ $(function(){
                             <p>${this.description}</p>
                         </div>
                         <div class="overlay-buttons">
-                            <a href="">   
+                            <a href="../pages/more_info.html?id=${this.id}">   
                                 <div class="movie-btn" data-tooltip="More Info"><img  src="../assets/info.svg" alt="info"></div>
                             </a>
-                            <a href="" >    
+                            <a href="../pages/" >    
                                 <div class="movie-btn" data-tooltip="Watch Now"><img  src="../assets/play.svg" alt="play"></div>
                             </a>
                             <a href="">
@@ -135,4 +135,6 @@ $(function(){
             unhideMatchingMovies(filtered_films);
             //use filtered films array to append data
         })
+
+
 });
