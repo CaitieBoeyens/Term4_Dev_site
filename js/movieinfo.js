@@ -35,7 +35,7 @@ $(function(){
             <div id="${movie.id}-container">
                 <div class="banner container-fluid hidden-sm-hidden-xs">
 
-                    <div id="container-${movie.id} header" class="item col-xs-12 banner-block">
+                    <div id="${movie.id}" class="item col-xs-12 banner-block">
                         
                     </div>
                 </div>
@@ -62,7 +62,7 @@ $(function(){
         </div>
         `);
         
-            $(`#container-${movie.id}`).css("background-image", url(`"${movie.imgBan}"`));
+            $("#film1").css("background-image", url("../assets/Movies/blairWitchProject_poster.jpg"));
     
     }
 });
