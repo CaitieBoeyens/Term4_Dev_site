@@ -35,7 +35,7 @@ $(function(){
             <div id="${movie.id}-container">
                 <div class="banner container-fluid hidden-sm-hidden-xs">
 
-                    <div id="${movie.id}" class="item header col-xs-12 banner-block">
+                    <div id="container-${movie.id} header" class="item col-xs-12 banner-block">
                         
                     </div>
                 </div>
@@ -62,8 +62,13 @@ $(function(){
         </div>
         `);
         
+<<<<<<< HEAD
+            $(`#container-${movie.id}`).css("background-image", url(`"${movie.imgBan}"`));
+=======
 
                 '$(`#${this.id}`).css("background-image", `url("${this['img-ban'] }")`
     };
+>>>>>>> b55897978fe0fdaca1692523c15807fea3cf385c
     
+    }
 });

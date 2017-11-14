@@ -11,7 +11,7 @@ $(function(){
         $(films).each(function(){
             $("#all_movie_container").append(`
             <div class="movie col-xs-12 col-sm-4">
-                <div id="${this.id}" class="movie-block" data-year="${this.year}" data-genre="${this.type}" data-imdb="${this.Imdb}" data-reels="${this.reels}">
+                <div id="container-${this.id}" class="movie-block" data-year="${this.year}" data-genre="${this.type}" data-imdb="${this.Imdb}" data-reels="${this.reels}">
                     <div class="overlay">
                         <div class="overlay-name">
                             <h4>${this.name}</h4>
@@ -21,17 +21,10 @@ $(function(){
                             <p>${this.description}</p>
                         </div>
                         <div class="overlay-buttons">
-<<<<<<< HEAD
-                            <a href="../pages/more_info.html?id=${this.id}">   
-                                <div class="movie-btn" data-tooltip="More Info"><img  src="../assets/info.svg" alt="info"></div>
-                            </a>
-                            <a href="../pages/" >    
-=======
                             <a href="../pages/movieinfo.html?id=${this.id}">   
                                 <div class="movie-btn" data-tooltip="More Info"><img  src="../assets/info.svg" alt="info"></div>
                             </a>
                             <a href="../pages/watchpage.html?id=${this.id}" >    
->>>>>>> b45c77798321ccb2d5c61fd847775e9a73782678
                                 <div class="movie-btn" data-tooltip="Watch Now"><img  src="../assets/play.svg" alt="play"></div>
                             </a>
                             <a href="../pages/watchlist.html">
@@ -44,9 +37,9 @@ $(function(){
             `);
 
             if (window.matchMedia("(min-width: 768px)").matches) {
-                $(`#${this.id}`).css("background-image", `url("${this['img-path'] }")`);
+                $(`#container-${this.id}`).css("background-image", `url("${this['img-path'] }")`);
               } else {
-                $(`#${this.id}`).css("background-image", `url("${this['img-ban'] }")`);
+                $(`#container-${this.id}`).css("background-image", `url("${this['imgBan'] }")`);
               }
             
         });
@@ -79,7 +72,6 @@ $(function(){
             ticks: [0, 1, 2, 3, 4, 5],
             ticks_labels: ['Past', '1980', '1990', '2000', '2010', 'Future'],
             ticks_snap_bounds: 30 });
-<<<<<<< HEAD
 
         function getGenreChoice() {
             return $("#genre option:selected").text();
@@ -133,6 +125,7 @@ $(function(){
                 $("#container-"+this.id).fadeIn();
             });
         }
+        
 
         $("#filter").click(function(){
             const genre_choice = getGenreChoice();
@@ -152,17 +145,5 @@ $(function(){
             //use filtered films array to append data
         })
 
-
+        
 });
-=======
-    
-    
-    
-    
-    
-    
-        
-        
-    });
-    
->>>>>>> b45c77798321ccb2d5c61fd847775e9a73782678
