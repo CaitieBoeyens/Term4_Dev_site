@@ -52,7 +52,7 @@ $(function(){
 
                         <div class="row">
 
-                            <div class="col-xs-12 col-md-6 col-md-offset-3" id="description>
+                            <div class="col-xs-12 col-md-6 col-md-offset-3" id="description">
                                 <h6>${movie.type} | ${movie.year} | IMDb: ${movie.imdb}/10 | ${movie.reels} Reels</h6>
                                 <p>${movie.description}</p>
                             </div>
