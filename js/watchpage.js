@@ -1,3 +1,39 @@
+$(document).ready(function(){
+    
+  console.log("ready");
+    
+    $(".play-pause").on("click", function() {
+        var currentSource = $(this).attr("src");
+        var newSource = currentSource.replace("../assets/", "../assets/alt_")
+        $(this).attr("src", newSource);
+    });
+    
+    $(".play-pause").on("click", function() {
+        var currentSource = $(this).attr("src");
+        var newSource = currentSource.replace("../assets/alt_", "../assets/")
+        $(this).attr("src", newSource);
+    });
+    
+    
+    
+    
+    
+    $(".mute").on("click", function() {
+        var currentSource = $(this).attr("src");
+        var newSource = currentSource.replace("../assets/", "../assets/alt_")
+        $(this).attr("src", newSource);
+    });
+    
+    $(".mute").on("click", function() {
+        var currentSource = $(this).attr("src");
+        var newSource = currentSource.replace("../assets/alt_", "../assets/")
+        $(this).attr("src", newSource);
+    });
+    
+    
+});
+
+
 window.onload = function() {
 
   // Video
@@ -23,6 +59,7 @@ playButton.addEventListener("click", function() {
 
     // Update the button text to 'Pause'
     playButton.innerHTML = "Pause";
+  
   } else {
     // Pause the video
     video.pause();
@@ -96,3 +133,11 @@ volumeBar.addEventListener("change", function() {
   // Update the video volume
   video.volume = volumeBar.value;
 });
+
+
+
+
+
+
+
+

@@ -1,90 +1,71 @@
 $(function(){
-    
+    const page_id = get_id();
+    const filtered_film_list = filterId(films, page_id);
+    const chosen_movie = filtered_film_list[0] || null;
+    if (chosen_movie) {
+        appendChosenMovie(chosen_movie);
+    } else {
+        // deal with no chosen movie
+    }
+
+
     function get_id(){
-        var id = getUrlVars()["id"];
-        return (id);
+        return getUrlVars()["id"];
     }
-    
-    
-    
+
     function getUrlVars(){
-        
-        var vars = {};
-        
-        var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
-            
-            vars[key] = value;
-            
+        const url_variables = {};
+        window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+            url_variables[key] = value;
         });
-        
-        return vars;
+        return url_variables;
     }
-    
-    console.log(get_id());
-    
     
     function filterId(films, page_id){
         
         const id_match = function(movie){
             return movie.id === page_id;
         };
-            
-            const filtered_id = films.filter(id_match);
-            
-            return filtered_id;
+        return films.filter(id_match);
     };
     
-    $(window).load(function(){
-        const page_id = get_id();
-        const filtered_id = filterId(films, page_id);
+    function appendChosenMovie(movie){
+        $("#movie_info_container").append(`
         
-        debugger;
-        
-        console.log(filtered_id);
-        
-        
-    });
-    
-    
-    
-    
-    $(function correctMovies()
-    {
-        $(films).each(function(){
-            $("movie_info_container").append(`
-            <div class="movie col-xs-12 col-sm-4">
-                <div id="${filtered_id.id}" class="movie-block" data-year="${filtered_id.year}" data-genre="${filtered_id.type}" data-imdb="${filtered_id.Imdb}" data-reels="${filtered_id.reels}">
-                    <div class="overlay">
-                        <div class="overlay-name">
-                            <h4>${filtered_id.name}</h4>
-                        </div>
-                        <div class="overlay-info">
-                            <h5>${filtered_id.type} | ${filtered_id.year} | IMDb: ${filtered_id.Imdb}/10 | ${filtered_id.reels} Reels</h5>
-                            <p>${filtered_id.description}</p>
-                        </div>
-                        <div class="overlay-buttons">
-                            <a href="../pages/movieinfo.html?id=${filtered_id.id}">   
-                                <div class="movie-btn" data-tooltip="More Info"><img  src="../assets/info.svg" alt="info"></div>
-                            </a>
-                            <a href="../pages/watchpage.html?id=${filtered_id.id}" >    
-                                <div class="movie-btn" data-tooltip="Watch Now"><img  src="../assets/play.svg" alt="play"></div>
-                            </a>
-                            <a href="../pages/watchlist.html">
-                                <div class="movie-btn" data-tooltip="Add to Watchlist"><img src="../assets/plus.svg" alt="plus"></div>
-                            </a>
-                        </div>
+            <div id="${movie.id}" data-year="${movie.year}" data-genre="${movie.type}" data-imdb="${movie.Imdb}" data-reels="${movie.reels}">
+                <div class="banner container-fluid hidden-sm-hidden-xs">
+
+                    <div id="header" class="item col-xs-12 banner-block">
+                        
                     </div>
                 </div>
-            </div>
-            `)});
 
-            if (window.matchMedia("(min-width: 768px)").matches) {
-                $(`#${filtered_id.id}`).css("background-image", `url("${filtered_id['img-path'] }")`);
-              } else {
-                $(`#${filtered_id.id}`).css("background-image", `url("${filtered_id['img-ban'] }")`);
-              }
-            
-        });
+                    <div class="container content">
+                    <div class="library-welcome col-xs-12">
+                        <h1>${movie.name}</h1>
+                    </div>
+                    <div class="filters col-xs-12">
+
+                        <div class="row">
+
+                        </div>
+
+                        <div class="row">
+
+                            <div class="col-xs-12 col-md-6 col-md-offset-3" id="description>
+                                <h6>${movie.type} | ${movie.year} | IMDb: ${movie.imdb}/10 | ${movie.reels} Reels</h6>
+                                <p>${movie.description}</p>
+                            </div>
+                    
+                        </div>
+                    </div>
+        </div>
+        `);
+        if (window.matchMedia("(min-width: 768px)").matches) {
+            $(`#${movie.id}`).css("background-image", `url("${movie['img-path'] }")`);
+        } else {
+            $(`#${movie.id}`).css("background-image", `url("${movie['img-ban'] }")`);
+        }
+    };
     
-   
 });
