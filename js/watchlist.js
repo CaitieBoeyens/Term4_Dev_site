@@ -40,7 +40,7 @@ $(function(){
             if (window.matchMedia("(min-width: 768px)").matches) {
                 $(`#${this.id}`).css("background-image", `url("${this['img-path'] }")`);
               } else {
-                $(`#${this.id}`).css("background-image", `url("${this['img-ban'] }")`);
+                $(`#${this.id}`).css("background-image", `url("${this['imgBan'] }")`);
               }
             
         });

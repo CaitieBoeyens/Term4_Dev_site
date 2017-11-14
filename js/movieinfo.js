@@ -35,7 +35,7 @@ $(function(){
             <div id="${movie.id}" data-year="${movie.year}" data-genre="${movie.type}" data-imdb="${movie.Imdb}" data-reels="${movie.reels}">
                 <div class="banner container-fluid hidden-sm-hidden-xs">
 
-                    <div id="header" class="item col-xs-12 banner-block">
+                    <div id="container-${movie.id} header" class="item col-xs-12 banner-block">
                         
                     </div>
                 </div>
@@ -61,11 +61,8 @@ $(function(){
                     </div>
         </div>
         `);
-        if (window.matchMedia("(min-width: 768px)").matches) {
-            $(`#${movie.id}`).css("background-image", `url("${movie['img-path'] }")`);
-        } else {
-            $(`#${movie.id}`).css("background-image", `url("${movie['img-ban'] }")`);
-        }
-    };
+        
+            $(`#container-${movie.id}`).css("background-image", url(`"${movie.imgBan}"`));
     
+    }
 });
