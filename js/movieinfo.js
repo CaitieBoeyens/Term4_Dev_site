@@ -40,7 +40,7 @@ $(function(){
                     </div>
                 </div>
 
-                    <div class="container content">
+                <div class="container content">
                     <div class="library-welcome col-xs-12">
                         <h1>${movie.name}</h1>
                     </div>
@@ -62,13 +62,7 @@ $(function(){
         </div>
         `);
         
-<<<<<<< HEAD
             $(`#container-${movie.id}`).css("background-image", url(`"${movie.imgBan}"`));
-=======
-
-                '$(`#${this.id}`).css("background-image", `url("${this['img-ban'] }")`
-    };
->>>>>>> b55897978fe0fdaca1692523c15807fea3cf385c
     
     }
 });
