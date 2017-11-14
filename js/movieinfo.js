@@ -32,7 +32,7 @@ $(function(){
     function appendChosenMovie(movie){
         $("#movie_info_container").append(`
         
-            <div id="${movie.id}" data-year="${movie.year}" data-genre="${movie.type}" data-imdb="${movie.Imdb}" data-reels="${movie.reels}">
+            <div id="${movie.id}-container">
                 <div class="banner container-fluid hidden-sm-hidden-xs">
 
                     <div id="container-${movie.id} header" class="item col-xs-12 banner-block">
@@ -62,7 +62,13 @@ $(function(){
         </div>
         `);
         
+<<<<<<< HEAD
             $(`#container-${movie.id}`).css("background-image", url(`"${movie.imgBan}"`));
+=======
+
+                '$(`#${this.id}`).css("background-image", `url("${this['img-ban'] }")`
+    };
+>>>>>>> b55897978fe0fdaca1692523c15807fea3cf385c
     
     }
 });

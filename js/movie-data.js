@@ -1,6 +1,6 @@
 const films = [
     {
-        "name": "The Blair Witch Program",
+        "name": "The Blair Witch Project",
         "id": "film1",
         "img-path": "../assets/Movies/blairWitchProject_poster.jpg",
         "imgBan": "../assets/Movies/blairWitchProject_banner.jpg",
