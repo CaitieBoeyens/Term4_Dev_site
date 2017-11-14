@@ -21,10 +21,17 @@ $(function(){
                             <p>${this.description}</p>
                         </div>
                         <div class="overlay-buttons">
+<<<<<<< HEAD
+                            <a href="../pages/more_info.html?id=${this.id}">   
+                                <div class="movie-btn" data-tooltip="More Info"><img  src="../assets/info.svg" alt="info"></div>
+                            </a>
+                            <a href="../pages/" >    
+=======
                             <a href="../pages/movieinfo.html?id=${this.id}">   
                                 <div class="movie-btn" data-tooltip="More Info"><img  src="../assets/info.svg" alt="info"></div>
                             </a>
                             <a href="../pages/watchpage.html?id=${this.id}" >    
+>>>>>>> b45c77798321ccb2d5c61fd847775e9a73782678
                                 <div class="movie-btn" data-tooltip="Watch Now"><img  src="../assets/play.svg" alt="play"></div>
                             </a>
                             <a href="../pages/watchlist.html">
@@ -72,6 +79,82 @@ $(function(){
             ticks: [0, 1, 2, 3, 4, 5],
             ticks_labels: ['Past', '1980', '1990', '2000', '2010', 'Future'],
             ticks_snap_bounds: 30 });
+<<<<<<< HEAD
+
+        function getGenreChoice() {
+            return $("#genre option:selected").text();
+        }
+        function getDateRange() {
+            const string_indexes = $("#ex16b").val().split(',');
+            const years = [1000, 1980, 1990, 2000, 2010, 3000];
+            const range_array = [years[string_indexes[0]], years[string_indexes[1]]];
+            return range_array;
+        }
+        function getIndieReelRating() {
+            return parseInt($("input[name=reels]:checked").val()) || 0;
+        }
+        function getImdbRating() {
+            return parseFloat($("input[name=imdb]:checked").val()) || 0;
+        }
+        // films is an array of film objects
+        // genre is a string
+        // indie_reel_rating is an integer
+        // imdb rating is a double
+        // start and end years are integers
+        function filterFilms(films, genre, indie_reel_rating, imdb_rating, start_year, end_year) {
+            const genre_match = function (movie) {
+                return movie.type === genre;
+            };
+            const falls_within_year_range = function (movie) {
+                const movie_year = parseInt(movie.year);
+                return (movie_year >= start_year && movie_year <= end_year);
+            };
+            const i_r_rating_match = function (movie) {
+                return parseInt(movie.reels) >= indie_reel_rating;
+            };
+            const imdb_rating_match = function (movie) {
+                return parseFloat(movie.imdb) >= imdb_rating;
+            };
+            const filtered_films = films
+                                            .filter(genre_match)
+                                            .filter(falls_within_year_range)
+                                            .filter(i_r_rating_match)
+                                            .filter(imdb_rating_match);
+            return filtered_films;
+        }
+
+        function hideAllMovies() {
+            $(films).each(function() {
+                $("#container-"+this.id).fadeOut();
+            });
+        }
+        function unhideMatchingMovies(filtered_films) {
+            $(filtered_films).each(function() {
+                $("#container-"+this.id).fadeIn();
+            });
+        }
+
+        $("#filter").click(function(){
+            const genre_choice = getGenreChoice();
+            const date_range = getDateRange();
+            const start_year = date_range[0];
+            const end_year = date_range[1];
+            const indie_reel_rating = getIndieReelRating();
+            const imdb_rating = getImdbRating();
+            //record each choice
+            //filter according to the choices
+            //filterFilms(films, genre, indie_reel_rating, imdb_rating, start_year, end_year)
+            const filtered_films = filterFilms(films,genre_choice,indie_reel_rating,imdb_rating,start_year,end_year);
+            
+            console.log(filtered_films);
+            hideAllMovies();
+            unhideMatchingMovies(filtered_films);
+            //use filtered films array to append data
+        })
+
+
+});
+=======
     
     
     
@@ -82,3 +165,4 @@ $(function(){
         
     });
     
+>>>>>>> b45c77798321ccb2d5c61fd847775e9a73782678
