@@ -15,7 +15,7 @@
     padding: 0;
 }
 
-.library-welcome {
+.watchlist-welcome {
     background-color: rgba(110, 110, 110, 0.3); 
     text-align: center;
     margin-top: 1em;
@@ -24,77 +24,7 @@
     padding-top: 0.5em;
 }
 
-/* FILTERS */
 
-.filters {
-    background-color: rgba(0, 0, 0, 0.5); 
-    text-align: center;
-    margin-bottom: 1em;
-    padding: 2em 0;
-    margin-top: 0;
-}
-
-.filters h5 {
-    color: #961f1e;
-}
-
-
-#genre {
-    margin-bottom: 1em;
-}
-
-select {
-    border-radius: 20px;
-    width: 80%;
-    padding: 0.2em 10px;
-    color: #145654;
-    outline: 0;
-}
-
-label {
-    color: #bebebe;
-}
-
-select option:hover {
-    background-color:#145654;
-    color: #ffffff; 
-}
-
-#year {
-    margin-bottom: 1em;
-}
-
-#view-mode {
-    background-color: rgba(255, 255, 255, 0.5);
-    width: 50%;
-    border-radius: 5px 5px 5px 5px;
-    padding-top: 0.1em;
-    padding-bottom: 0.4em;
-    margin: auto;
-    margin-top: 0.5em;
-
-}
-
-#view-mode h5{
-    color: #145654;
-}
-
-#view-mode img {
-    display: inline-block;
-    width: 30px;
-    cursor: pointer;
-}
-
-#filter {
-    width: 35%;
-    background-color: #145654;
-    color: #ffffff;
-    border-radius: 20px;
-    border: none;
-    padding: 0.5em 10px;
-    margin-top: 1.5em;
-    margin-bottom: 2em;
-}
 
 /*MOVIES*/
 
@@ -123,10 +53,12 @@ select option:hover {
     width: 100%;
 }
 
-#remove-btn img{
+#swap img{
     transform: rotate(45deg);
     
 }
+
+
 
 /* OVERLAY */
 
@@ -177,6 +109,7 @@ select option:hover {
     position: relative;
     background-size: 100%;
     background-position: center;
+    background-image:url(../assets/Movies/bigFish_poster.jpg);
 }
 @media (max-width: 768px) {
     .movie-block {

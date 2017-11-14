@@ -32,10 +32,10 @@ $(function(){
     function appendChosenMovie(movie){
         $("#movie_info_container").append(`
         
-            <div id="${movie.id}" data-year="${movie.year}" data-genre="${movie.type}" data-imdb="${movie.Imdb}" data-reels="${movie.reels}">
+            <div id="${movie.id}-container">
                 <div class="banner container-fluid hidden-sm-hidden-xs">
 
-                    <div id="header" class="item col-xs-12 banner-block">
+                    <div id="${movie.id}" class="item header col-xs-12 banner-block">
                         
                     </div>
                 </div>
@@ -61,11 +61,9 @@ $(function(){
                     </div>
         </div>
         `);
-        if (window.matchMedia("(min-width: 768px)").matches) {
-            $(`#${movie.id}`).css("background-image", `url("${movie['img-path'] }")`);
-        } else {
-            $(`#${movie.id}`).css("background-image", `url("${movie['img-ban'] }")`);
-        }
+        
+
+                '$(`#${this.id}`).css("background-image", `url("${this['img-ban'] }")`
     };
     
 });
