@@ -6,28 +6,19 @@ $(function(){
     //     }); 
     // });
     
-   // const films imported from movie-data.js
-    function getMostRecentMovies(num_movies)
+    $(function appendAllMovies()
     {
-        const most_recent = films.filter( function(el, idx) {
-            return idx < num_movies;
-        });
-        return most_recent;
-    }
-
-    function appendMostRecentMovies(most_recent_movies)
-    {
-        for (const movie of most_recent_movies) {
-            $("#most_recent_movie_container").append(`
+        $(films).each(function(){
+            $("#movielist_container").append(`
             <div class="movie col-xs-12 col-sm-4">
-                <div id="${movie.id}" class="recent-movie">
+                <div id="${this.id}" class="movie-block" data-year="${this.year}" data-genre="${this.type}" data-imdb="${this.Imdb}" data-reels="${this.reels}">
                     <div class="overlay">
                         <div class="overlay-name">
-                            <h4>${movie.name}</h4>
+                            <h4>${this.name}</h4>
                         </div>
                         <div class="overlay-info">
-                            <h5>${movie.type} | ${movie.year} | IMDb: ${movie.Imdb}/10 | 4 Reels</h5>
-                            <p>${movie.description}</p>
+                            <h5>${this.type} | ${this.year} | IMDb: ${this.Imdb}/10 | ${this.reels} Reels</h5>
+                            <p>${this.description}</p>
                         </div>
                         <div class="overlay-buttons">
                             <a href="">   
@@ -36,19 +27,29 @@ $(function(){
                             <a href="" >    
                                 <div class="movie-btn" data-tooltip="Watch Now"><img  src="../assets/play.svg" alt="play"></div>
                             </a>
-                            <a href="">
-                                <div id="swap" class="movie-btn" data-tooltip="Add to Watchlist"><img src="../assets/plus.svg" alt="plus"></div>
-                            </a>
+                            
+                                <div id="remove-btn" class="movie-btn" data-tooltip="Remove from Watchlist"><img src="../assets/plus.svg" alt="plus"></div>
+                            
                         </div>
                     </div>
                 </div>
             </div>
             `);
-            $(`#${movie.id}`).css("background-image", `url("${movie['img-path'] }")`);
-        }
-    }
-    const most_recent_movies = getMostRecentMovies(3);
-    appendMostRecentMovies(most_recent_movies);
+        
+
+            if (window.matchMedia("(min-width: 768px)").matches) {
+                $(`#${this.id}`).css("background-image", `url("${this['img-path'] }")`);
+              } else {
+                $(`#${this.id}`).css("background-image", `url("${this['img-ban'] }")`);
+              }
+            
+        });
+    });
+    
+    $("#remove-btn").click(function(){
+           $(this).parent(".movie-block").remove();
+           
+       });
 
     // RATINGS
 
@@ -77,4 +78,9 @@ $(function(){
             ticks: [0, 1, 2, 3, 4, 5],
             ticks_labels: ['Past', '1980', '1990', '2000', '2010', 'Future'],
             ticks_snap_bounds: 30 });
+    
+    
+
+    
+       
 });

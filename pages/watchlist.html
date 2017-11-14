@@ -10,9 +10,11 @@
         <script src="../bootstrap/3.3.6/js/bootstrap.min.js"></script>
         
         <script src="https://use.fontawesome.com/12f8c02d0f.js"></script>
-        
-        <link rel="stylesheet" href="../owlcarousel/owl.carousel.css">
-        <link rel="stylesheet" href="../owlcarousel/owl.theme.default.css">
+
+        <link rel="stylesheet" href="../rating/rating.css">
+
+        <link rel="stylesheet" href="../slider/bootstrap-slider.css">
+        <script src="../slider/bootstrap-slider.js"></script>
         
         <!--PROJECT FILES-->
         <script src="../js/movie-data.js"></script>
@@ -21,7 +23,7 @@
 		<link rel="stylesheet" href="../css/watchlist.css">
 		
 		
-		<title>Indie Reel</title>
+		<title>Indie Reel | Watchlist</title>
        <link rel="icon" type="image/x-icon" href="../assets/icon@72x.png">
     
     </head>
@@ -35,7 +37,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span> 
                         </button>
-                        <a class="navbar-brand" href="#">
+                        <a class="navbar-brand" href="home.html">
                             <img src="../assets/logo.svg" alt="IndieReel">
                         </a>
                     </div>
@@ -43,8 +45,8 @@
                         
                         <ul class="nav navbar-nav navbar-right">
                            
-                            <li class="nav-active"><a href="home.html">Home</a></li>
-                            <li><a href="library.html">Browse Movies</a></li> 
+                            <li><a href="home.html">Home</a></li>
+                            <li><a href="#">Browse Movies</a></li> 
                             <li><a href="#"></a></li>
                             <li class="dropdown">
                                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">
@@ -53,7 +55,7 @@
                                 </a>
                                 <ul class="dropdown-menu">
                                   <li><a href="#">My Profile</a></li>
-                                  <li><a href="#">My Watchlist</a></li>
+                                  <li class="nav-active"><a href="watchlist.html">My Watchlist</a></li>
                                   <li><a href="../index.html">Sign Out</a></li>
                                 </ul>
                               </li>
@@ -64,17 +66,21 @@
                     </div>
                 </div>
             </nav>
-        
 
-        
-        <div class="main-body container">
-            
-            <div class="watchlist-welcome col-xs-12 row">
+            <div class="main-body">
+                    <div class="banner container-fluid hidden-sm hidden-xs">
+                             <div id="header" class="item col-xs-12 banner-block">
+                             </div>                        
+                     </div><!--BANNER-->
+
+                     <script src="../rating/rating.js"></script>
+                     
+                     <div class="container content">
+                         <div class="library-welcome col-xs-12">
                              <h1>Watchlist</h1>
-                             <p>Welcome to your watchlist. You can rate your movies so you can see your favourite movies or ones you should maybe remove from your list.</p>
-            </div>
-            
-            <div class="filters col-xs-12">  
+                             <p>Welcome to your Watchlist. Here you can browse all the movies you added. Feel free to remove movies and add more. <br> Use out filter below to sort your list even more.</p>
+                         </div>
+                         <div class="filters col-xs-12">  
                              <div class="row">
                                  <div class="col-xs-8 col-xs-offset-2 col-md-4 col-md-offset-2" id="genre">
                                      <h5>Genre</h5>
@@ -147,32 +153,15 @@
                                 <div class="col-xs-12 col-md-6 col-md-offset-3" id="filter-btn">
                                     <input type="button" value="Apply Filters" id="filter">
                                 </div>
-                                <div class="col-xs-6 col-xs-offset-3 col-md-3 col-md-offset-0">
-                                    <div id="view-mode">
-                                        <h5>View Mode</h5>
-                                        <img src="../assets/gridview_selected.svg" alt="grid-select">
-                                        <img src="../assets/listview.svg" alt="list-select">
-                                    </div>
-                                </div>
                             </div>
                             
                          </div>
-            
-            <div class="row" id="movielist_container">
-            
-            </div> <!--Movielist-->
-            
-            
-            
-            
-            
-        
-        
-        
-        </div>
-        
-        
-        <footer class="container-fluid col-xs-12">
+                         <div class="row" id="movielist_container">
+                         </div> <!--ALL THE MOVIES GO HERE-->
+                     </div>
+            </div><!--CONTENT-->
+
+            <footer class="container-fluid">
                 
                 <div class="row">
                     <div id="left-foot" class="col-xs-4"></div>
@@ -187,6 +176,11 @@
                     </div>
                 </div> <!--FOOTER CONTENT-->
             
+                <!-- AUTOCOMPLETE -->
+                <!-- <link type="text/css" rel="stylesheet" href="../autocomplete-master/autocomplete.css" />
+                <script src="../js/jquery/1.12.0/jquery.min.js"></script>
+                <script src="../autocomplete-master/autocomplete.js"></script> -->
+
             </footer><!--footer-->
     
     </body>
