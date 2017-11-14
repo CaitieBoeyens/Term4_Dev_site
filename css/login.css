@@ -10,12 +10,14 @@
 /* GENERAL */
 
 body {
-    height: 900px;
+    height: 100%;
     padding: 0px;
     margin: 0px;
 }
 
 .mainContainer {
+    height: 100%;
+    width: 100%;
     background-image: url(../assets/background.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -39,14 +41,14 @@ header {
 /* MAIN */
 
 main {
-    height: 700;
+    height: 100%;
     width: 100%;
     margin: 0px;
     padding: 0px;
 }
 
 .stuffLoginContainer {
-   height: 550px;
+   height: 100%;
    padding: 0px;
    margin: 80px auto auto auto;
 }
@@ -60,7 +62,7 @@ main {
 /* extra stuff */
 
 .extraStuff {
-   height: 550px;
+   height: 100%;
    background: rgba(92, 92, 92, 0.4);
    padding: 0px;
    margin: 0px;
