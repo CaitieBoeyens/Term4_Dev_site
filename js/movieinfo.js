@@ -40,7 +40,7 @@ $(function(){
                     </div>
                 </div>
 
-                    <div class="container content">
+                <div class="container content">
                     <div class="library-welcome col-xs-12">
                         <h1>${movie.name}</h1>
                     </div>
