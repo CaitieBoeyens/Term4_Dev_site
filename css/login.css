@@ -10,12 +10,14 @@
 /* GENERAL */
 
 body {
-    height: 900px;
+    height: 100%;
     padding: 0px;
     margin: 0px;
 }
 
 .mainContainer {
+    height: 100%;
+    width: 100%;
     background-image: url(../assets/background.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -39,14 +41,14 @@ header {
 /* MAIN */
 
 main {
-    height: 700;
+    height: 100%;
     width: 100%;
     margin: 0px;
     padding: 0px;
 }
 
 .stuffLoginContainer {
-   height: 550px;
+   height: 100%;
    padding: 0px;
    margin: 80px auto auto auto;
 }
@@ -60,7 +62,7 @@ main {
 /* extra stuff */
 
 .extraStuff {
-   height: 550px;
+   height: 100%;
    background: rgba(92, 92, 92, 0.4);
    padding: 0px;
    margin: 0px;
@@ -148,9 +150,7 @@ input {
     display: block;
     border-radius: 20px;
     height: 40px;
-    width: 150px;
     margin-top: 40px;
-    margin-left: 100px;
     text-align: center;
     background-color: #cd2a2c;
     color: white;
@@ -215,10 +215,37 @@ footer {
     margin: 70px 0px 0px 0px;
 }
 
-.copyright {
-    padding-top: 10px;
+#mid-foot {
+    text-align: center;
+    
+}
+#mid-foot h5{
+    color: #aaa;
 }
 
-.socialMedia img {
-    padding: 0px 0px 0px 25px;
+.social {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #145654;
+    color: #222;
+    margin-right: 20px;
+    float: right;
+    margin-top: 0.5em;
+    text-align: center;
 }
+
+.social i{
+    margin-top: 9px;
+}
+
+.social:hover {
+    background: #0b2f2d;
+}
+
+@media (max-width: 768px) {
+    .login {
+        width: 100%;
+    }
+}
+

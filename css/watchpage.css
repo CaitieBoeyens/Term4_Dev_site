@@ -27,16 +27,7 @@
     padding: 10px;
 }
 
-
-
-
-
-
-
-/* VIDEO */
-
-#videoContainer {
-    background-color: yellow;
+#video-container {
     width: 100%;
     color: white;
 }
@@ -45,50 +36,8 @@
     width: 100%;
 }
 
-#video-controls {
-    background-color: pink;
-    color: wite;
-}
-
-#play-pause {
-    margin-top: 5px;
-    margin-left: 5px;
-    float: left;
-    width: 4%;
-    background: none;
-    border: none;
-}
-
-#seek-bar {
-    margin-top: 10px;
-    margin-left: 10px;
-    width: 60%;
-    float: left;
-}
-
-#mute {
-    margin-top: 5px;
-    margin-left: 10px;
-    float: right;
-    width: 4%;
-    background: none;
-    border: none;
-}
-
-#volume-bar {
-    margin-top: 10px;
-    margin-left: 10px;
-    width: 10%;
-    float: right;
-}
-
-#full-screen {
-    margin-top: 5px;
-    margin-left: 10px;
-    float: right;
-    width: 4%;
-    background: none;
-    border: none;
+iframe {
+    height: 60vh;
 }
 
 
