@@ -21,13 +21,13 @@ $(function(){
                             <p>${this.description}</p>
                         </div>
                         <div class="overlay-buttons">
-                            <a href="../pages/movieinfo.html?id=${this.id}">   
+                            <a href="../pages/more_info.html?id=${this.id}">   
                                 <div class="movie-btn" data-tooltip="More Info"><img  src="../assets/info.svg" alt="info"></div>
                             </a>
                             <a href="../pages/watchpage.html?id=${this.id}" >    
                                 <div class="movie-btn" data-tooltip="Watch Now"><img  src="../assets/play.svg" alt="play"></div>
                             </a>
-                            <a>
+                            <a href="#">
                                 <div class="movie-btn add_to_watchlist" data-tooltip="Add to Watchlist"><img src="../assets/plus.svg" alt="plus"></div>
                             </a>
                         </div>
@@ -37,7 +37,7 @@ $(function(){
             `);
 
             if (window.matchMedia("(min-width: 768px)").matches) {
-                $(`#container-${this.id}`).css("background-image", `url(${this['img-path'] })`);
+                $(`#container-${this.id}`).css("background-image", `url(${this['imgPath'] })`);
               } else {
                 $(`#container-${this.id}`).css("background-image", `url("${this['imgBan'] }")`);
               }

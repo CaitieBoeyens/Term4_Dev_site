@@ -44,22 +44,29 @@
     padding: 0;
 }
 
+#info-container {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
 .rating {
-    text-align: center
+    text-align: center;
 }
 
 #imdb img {
     width: 100%;
     margin: auto;
+    padding: 0 20px; 
 }
 
 #reels img {
     width: 50%;
     margin: auto;
+    padding: 0 20px; 
 }
 
 .text-img-info {
 padding-top: 2em;
+padding: 2em 20px 0 20px;
 }
 
 .movie-title {
@@ -72,9 +79,10 @@ padding-top: 2em;
 }
 
 .movie-poster {
-    height: 400px;
+    height: 360px;
     margin: auto;
     overflow: hidden;
+    margin-bottom: 2em;
 }
 
 .movie-poster img {
@@ -90,4 +98,15 @@ padding-top: 2em;
 
 #description p {
     color: white;
+}
+
+.movie-btn {
+    width: 30px;
+    float: left;
+    margin-right: 20px;
+    padding: 2em 0;
+}
+
+.movie-btn img{
+    width: 100%;
 }

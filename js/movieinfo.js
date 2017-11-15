@@ -30,41 +30,84 @@ $(function(){
     };
     
     function appendChosenMovie(movie){
-        $("#movie_info_container").append(`
+        $("#main-body").append(`
         
-            <div id="${movie.id}-container">
-                <div class="banner container-fluid hidden-sm-hidden-xs">
+        <div class="banner container-fluid">
+        
+             <div id="header" class="col-xs-12 banner-block">
+                 
+                 <img src="${movie.imgBan}" alt="IndieReel">
+                 
+             </div> 
+        
+        </div><!--BANNER-->
 
-                    <div id="${movie.id}" class="item col-xs-12 banner-block">
+    
+     
+        <div class="container content">
+            
+            <div class="movie-title col-xs-12">
+                
+                <h1>${movie.name}</h1>
+                
+            </div>
+            <div id="info-container">
+            
+                <div class="row">
+                    
+                    <div class="rating col-xs-8 col-xs-offset-2 col-md-4 col-md-offset-1" id="reels">
+                        
+                        <h5>Indie Reel Rating</h5>
+                        
+                            <img src="${movie.reelRating}" alt="reel rating">
                         
                     </div>
+                    
+                    <div class="rating col-xs-12 col-md-4 col-md-offset-1" id="imdb">
+                        
+                            <h5>IMDb Rating</h5>
+                            
+                            <img src="${movie.stars}" alt="imdb rating">									
+                        
+                    </div>
+
                 </div>
+                <div class="row text-img-info">
 
-                <div class="container content">
-                    <div class="library-welcome col-xs-12">
-                        <h1>${movie.name}</h1>
+                    <div class="hidden-xs hidden-sm col-md-3 movie-poster">
+                        <img src="${movie.imgPath}" alt="movie poster">
                     </div>
-                    <div class="filters col-xs-12">
-
                     
-
-                        <div class="row">
-
-                        </div>
-
-                        <div class="row">
-
-                            <div class="col-xs-12 col-md-6 col-md-offset-3" id="description">
-                                <h6>${movie.type} | ${movie.year} | IMDb: ${movie.imdb}/10 | ${movie.reels} Reels</h6>
-                                <p>${movie.description}</p>
-                            </div>
+                    <div class="col-xs-12 col-xs-offset-0 col-sm-offset-0 col-md-offset-1 col-md-8" id="description">
                     
-                        </div>
-                    </div>
-        </div>
-        `);
+                        <h6>  ${movie.type} 	| 	${movie.year} 	| 	IMDb: ${movie.imdb}/10 	| 	${movie.reels} Reels </h6>
         
-            $("#film1").css("background-image", url("../assets/Movies/blairWitchProject_poster.jpg"));
-    
-    }
+                            <p>	Director: ${movie.director}	</p>
+                        
+                            
+                            <p>	Cast: ${movie.cast} </p>	
+                                
+                                
+                            <p>${movie.description}</p>
+
+                            
+                            <a href="../pages/library.html">   
+                                <div class="movie-btn" data-tooltip="Back to Library"><img  src="../assets/back.svg" alt="back"></div>
+                            </a>
+                            <a href="#">
+                                <div id="swap" class="movie-btn" data-tooltip="Add to Watchlist"><img src="../assets/plus.svg" alt="plus"></div>
+                            </a>
+                            <a href="../pages/watchpage_test.html?id=${this.id}" >    
+                                <div class="movie-btn" data-tooltip="Watch Now"><img  src="../assets/play.svg" alt="play"></div>
+                            </a>
+                        
+                    </div><!--description-->
+                    
+                </div> <!--ROW2-->
+            </div>
+
+                
+        </div>
+        `)
+    };
 });

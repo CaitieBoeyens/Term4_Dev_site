@@ -37,13 +37,13 @@ $(function(){
                             <p>${movie.description}</p>
                         </div>
                         <div class="overlay-buttons">
-                            <a href="">   
+                            <a href="../pages/more_info.html?id=${movie.id}">   
                                 <div class="movie-btn" data-tooltip="More Info"><img  src="../assets/info.svg" alt="info"></div>
                             </a>
-                            <a href="" >    
+                            <a href=",,/pages/watchpage_test.html?id=${movie.id}" >    
                                 <div class="movie-btn" data-tooltip="Watch Now"><img  src="../assets/play.svg" alt="play"></div>
                             </a>
-                            <a href="">
+                            <a href="#">
                                 <div id="swap" class="movie-btn" data-tooltip="Add to Watchlist"><img src="../assets/plus.svg" alt="plus"></div>
                             </a>
                         </div>
@@ -51,7 +51,7 @@ $(function(){
                 </div>
             </div>
             `);
-            $(`#${movie.id}`).css("background-image", `url("${movie['img-path'] }")`);
+            $(`#${movie.id}`).css("background-image", `url("${movie['imgPath'] }")`);
         }
     }
     const most_recent_movies = getMostRecentMovies(3);
