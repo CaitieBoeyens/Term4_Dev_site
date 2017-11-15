@@ -57,7 +57,7 @@ $(function(){
     const most_recent_movies = getMostRecentMovies(3);
     appendMostRecentMovies(most_recent_movies);
     
-    
+
 
 });
 
