@@ -33,7 +33,7 @@ $(function(){
                             <h4>${movie.name}</h4>
                         </div>
                         <div class="overlay-info">
-                            <h5>${movie.type} | ${movie.year} | IMDb: ${movie.Imdb}/10 | 4 Reels</h5>
+                            <h5>${movie.type} | ${movie.year} | IMDb: ${movie.imdb}/10 | 4 Reels</h5>
                             <p>${movie.description}</p>
                         </div>
                         <div class="overlay-buttons">
