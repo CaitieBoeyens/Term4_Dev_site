@@ -28,7 +28,7 @@ $(function(){
                                 <div class="movie-btn" data-tooltip="Watch Now"><img  src="../assets/play.svg" alt="play"></div>
                             </a>
                             
-                                <div class="movie-btn add_to_watchlist" data-tooltip="Add to Watchlist"><img src="../assets/plus.svg" alt="plus"></div>
+                                <div class="add_to_watchlist movie-btn" data-tooltip="Add to Watchlist"><img src="../assets/plus.svg" alt="plus"></div>
                             
                         </div>
                     </div>
