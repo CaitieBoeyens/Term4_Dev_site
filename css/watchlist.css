@@ -1,7 +1,3 @@
-.movie {
-    margin-bottom: 1em;
-}
-
 #header {
     background-image: url(../assets/library_head.jpeg);
     background-size: 100%;
@@ -20,7 +16,6 @@
     text-align: center;
     margin-top: 1em;
     padding: 1.5em 10%;
-    margin-bottom: 0;
     padding-top: 0.5em;
 }
 
@@ -53,12 +48,33 @@
     width: 100%;
 }
 
-#swap img{
+#swap1 img{
     transform: rotate(45deg);
     
 }
 
+#swap2 img{
+    transform: rotate(45deg);
+    
+}
+#swap3 img{
+    transform: rotate(45deg);
+    
+}
 
+#swap4 img{
+    transform: rotate(45deg);
+    
+}
+
+#swap5 img{
+    transform: rotate(45deg);
+    
+}
+
+#movielist_container {
+    padding: 0;
+}
 
 /* OVERLAY */
 
@@ -96,7 +112,37 @@
     padding: 1em  0;
 }
 @media (min-width: 768px) {
-    .movie-block:hover .overlay .overlay-info {
+    .movie-block1:hover .overlay .overlay-info {
+        max-height: 500px;
+        opacity: 1;
+    
+    }
+}
+@media (min-width: 768px) {
+    .movie-block2:hover .overlay .overlay-info {
+        max-height: 500px;
+        opacity: 1;
+    
+    }
+}
+@media (min-width: 768px) {
+    .movie-block3:hover .overlay .overlay-info {
+        max-height: 500px;
+        opacity: 1;
+    
+    }
+}
+
+@media (min-width: 768px) {
+    .movie-block4:hover .overlay .overlay-info {
+        max-height: 500px;
+        opacity: 1;
+    
+    }
+}
+
+@media (min-width: 768px) {
+    .movie-block5:hover .overlay .overlay-info {
         max-height: 500px;
         opacity: 1;
     
@@ -104,16 +150,58 @@
 }
 /* RECENT MOVIES */
 
-.movie-block {
-    height: 500px;
+
+.movie-block1 {
+    height: 35vh;
+    margin-top: 1.5em;
     position: relative;
     background-size: 100%;
     background-position: center;
-    background-image:url(../assets/Movies/bigFish_poster.jpg);
+    background-image:url(../assets/Movies/blairWitchProject_banner.jpg);
+
 }
-@media (max-width: 768px) {
-    .movie-block {
-        height: 35vh;
-        margin-bottom: 1.5em;
-    }
+
+
+.movie-block2 {
+    height: 35vh;
+    margin-top: 1.5em;
+    position: relative;
+    background-size: 100%;
+    background-position: center;
+    background-image:url(../assets/Movies/ApocalypseNowNow_banner.jpg);
+
+}
+
+
+.movie-block3 {
+    height: 35vh;
+    margin-top: 1.5em;
+    position: relative;
+    background-size: 100%;
+    background-position: center;
+    background-image:url(../assets/Movies/MyOwnPrivateIdaho_banner.jpg);
+}
+
+.movie-block4 {
+    height: 35vh;
+    margin-top: 1.5em;
+    position: relative;
+    background-size: 100%;
+    background-position: center;
+    background-image:url(../assets/Movies/MyOwnPrivateIdaho_banner.jpg);
+}
+
+.movie-block5 {
+    height: 35vh;
+    margin-top: 1.5em;
+    position: relative;
+    background-size: 100%;
+    background-position: center;
+    background-image:url(../assets/Movies/MyOwnPrivateIdaho_banner.jpg);
+}
+
+.no_movies {
+    opacity: 0;
+    text-align: center;
+    height:35vh;
 }
