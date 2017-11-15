@@ -145,8 +145,5 @@ $(function(){
             //use filtered films array to append data
         })
 
-        $(".add_to_watchlist").click(function(){
-            $(this).attr("data-tooltip", "Remove from Watchlist");
-            $(this).css("transform", "rotate(45deg)");
-        });
+
 });
