@@ -201,27 +201,6 @@ select option:hover {
     background: url("../assets/clickstar.svg") !important;
   }
 
-#view-mode {
-    background-color: rgba(255, 255, 255, 0.5);
-    width: 50%;
-    border-radius: 5px 5px 5px 5px;
-    padding-top: 0.1em;
-    padding-bottom: 0.4em;
-    margin: auto;
-    margin-top: 0.5em;
-
-}
-
-#view-mode h5{
-    color: #145654;
-}
-
-#view-mode img {
-    display: inline-block;
-    width: 30px;
-    cursor: pointer;
-}
-
 #filter {
     width: 35%;
     background-color: #145654;
@@ -303,7 +282,7 @@ select option:hover {
     
     }
 }
-/* RECENT MOVIES */
+/*MOVIES */
 
 .movie-block {
     height: 500px;
@@ -316,4 +295,9 @@ select option:hover {
         height: 35vh;
         margin-bottom: 1.5em;
     }
+}
+
+.no-movies-message-container{
+    text-align: center;
+    display: none;
 }

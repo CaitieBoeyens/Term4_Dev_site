@@ -1,13 +1,10 @@
 $(function(){
 
-    // $(function() {
-    //     $("input").autocomplete({
-    //         source:[films.type]
-    //     }); 
-    // });
-    
-    $(function appendAllMovies()
-    {
+    // append all films on load
+    appendMovies(films);
+
+
+    function appendMovies(films){
         $(films).each(function(){
             $("#all_movie_container").append(`
             <div class="movie col-xs-12 col-sm-4">
@@ -44,7 +41,7 @@ $(function(){
             
         });
         attachAddToWatchlistClickHandler();
-    });
+    }
 
     // RATINGS
 
@@ -117,14 +114,18 @@ $(function(){
         }
 
         function hideAllMovies() {
-            $(films).each(function() {
-                $("#container-"+this.id).fadeOut();
-            });
+            $("#all_movie_container").empty();
         }
         function unhideMatchingMovies(filtered_films) {
-            $(filtered_films).each(function() {
-                $("#container-"+this.id).fadeIn();
-            });
+            appendMovies(filtered_films);
+        }
+
+        function noMoviesToShow(filtered_films) {
+            if (filtered_films.length === 0){
+                $(".no-movies-message-container").fadeIn();
+            } else {
+                $(".no-movies-message-container").fadeOut();
+            }
         }
         
 
@@ -140,10 +141,9 @@ $(function(){
             //filterFilms(films, genre, indie_reel_rating, imdb_rating, start_year, end_year)
             const filtered_films = filterFilms(films,genre_choice,indie_reel_rating,imdb_rating,start_year,end_year);
             
-            console.log(filtered_films);
             hideAllMovies();
+            noMoviesToShow(filtered_films);
             unhideMatchingMovies(filtered_films);
-            //use filtered films array to append data
         })
 
 
