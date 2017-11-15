@@ -3,9 +3,13 @@
 }
 
 #header {
-    background-image: url(../assets/Movies/ApocalypseNowNow_banner.jpg);
+    /*background-image: url(../assets/Movies/ApocalypseNowNow_banner.jpg);*/
     background-size: 100%;
     background-position: center;
+	height: 10%;
+	width: 20%;
+	
+
 }
 
 .banner-block {
