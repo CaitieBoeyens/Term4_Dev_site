@@ -8,29 +8,18 @@
     overflow: hidden;
 }
 
-@media (min-width: 992px){
-    #header {
-        height: 500px;
-        width: 100%;
-        overflow: hidden;
-    }
-    } /* LG and up */
-
-  @media (min-width: 768px) and (max-width: 991) {
+@media (max-width: 991px) and (min-width: 768px){
     #header {
         height: 400px;
-        width: 100%;
-        overflow: hidden;
     }
 } /* MD */
 
-  @media (min-width: 481px) and  (max-width: 767px){
+@media (min-width: 992px){
     #header {
-        height: 200px;
-        width: 100%;
-        overflow: hidden;
+        height: 500px;
     }
-} /* SM */
+} /* LG and up */
+
 
 #header img {
     width: 100%;

@@ -51,7 +51,11 @@ $(function(){
                 </div>
             </div>
             `);
-            $(`#${movie.id}`).css("background-image", `url("${movie['imgPath'] }")`);
+            if (window.matchMedia("(min-width: 768px)").matches) {
+                $(`#${movie.id}`).css("background-image", `url(${movie['imgPath'] })`);
+              } else {
+                $(`#${movie.id}`).css("background-image", `url("${movie['imgBan'] }")`);
+              }
         }
     }
     const most_recent_movies = getMostRecentMovies(3);
