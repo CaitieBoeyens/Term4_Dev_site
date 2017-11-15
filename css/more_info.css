@@ -6,6 +6,7 @@
 	height: 200px;
     width: 100%;
     overflow: hidden;
+    position: relative;
 }
 
 @media (max-width: 991px) and (min-width: 768px){
@@ -23,7 +24,10 @@
 
 #header img {
     width: 100%;
-    position: absolute;
+    position:absolute;
+    top:0;
+    bottom:0;
+    margin:auto
 }
 
 .banner-block {

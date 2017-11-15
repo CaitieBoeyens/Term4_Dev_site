@@ -43,6 +43,7 @@ $(function(){
               }
             
         });
+        attachAddToWatchlistClickHandler();
     });
 
     // RATINGS

@@ -94,10 +94,10 @@ $(function(){
                             <a href="../pages/library.html">   
                                 <div class="movie-btn" data-tooltip="Back to Library"><img  src="../assets/back.svg" alt="back"></div>
                             </a>
-                            <a href="#">
+                            
                                 <div class="movie-btn add_to_watchlist" data-tooltip="Add to Watchlist"><img src="../assets/plus.svg" alt="plus"></div>
-                            </a>
-                            <a href="../pages/watchpage_test.html?id=${this.id}" >    
+                            
+                            <a href="../pages/watchpage.html?id=${movie.id}" >    
                                 <div class="movie-btn" data-tooltip="Watch Now"><img  src="../assets/play.svg" alt="play"></div>
                             </a>
                         
