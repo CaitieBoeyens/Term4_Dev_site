@@ -32,7 +32,7 @@ $(function(){
     function appendChosenMovie(movie){
         $("#main-body").append(`
         
-        <div class="banner container-fluid">
+        <div  class="banner container-fluid">
         
              <div id="header" class="col-xs-12 banner-block">
                  
