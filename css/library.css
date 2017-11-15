@@ -69,8 +69,36 @@ select option:hover {
     float: left;
     overflow: hidden;
     width: 100%;
-    padding-right: 25%;
+    padding-right: 18%;
   }
+
+  @media (min-width: 992px){
+    #indie-reel-rating {
+        float: left;
+        overflow: hidden;
+        width: 100%;
+        padding-right: 25%;
+      }
+    } /* LG and up */
+
+  @media (min-width: 768px) and (max-width: 991) {
+    #indie-reel-rating {
+        float: left;
+        overflow: hidden;
+        width: 100%;
+        padding-right: 0;
+      }
+    } /* MD */
+
+  @media (min-width: 481px) and  (max-width: 767px){
+    #indie-reel-rating {
+        float: left;
+        overflow: hidden;
+        width: 100%;
+        padding-right: 31%;
+      }
+    } /* SM */
+
   #indie-reel-rating input[type=radio]:checked ~ label:after {
     background: url("../assets/rating_selected.svg");
   }
@@ -110,7 +138,35 @@ select option:hover {
     float: left;
     overflow: hidden;
     width: 100%;
+    padding-right: 12%;
   }
+
+  @media (min-width: 992px){
+    #imdb-rating {
+        float: left;
+        overflow: hidden;
+        width: 100%;
+        padding-right: 2%;
+      }
+    } /* LG and up */
+
+  @media (min-width: 768px) and (max-width: 991) {
+    #imdb-rating {
+        float: left;
+        overflow: hidden;
+        width: 100%;
+        padding-right: 0;
+      }
+    } /* MD */
+
+  @media (min-width: 481px) and (max-width: 767px){
+    #imdb-rating {
+        float: left;
+        overflow: hidden;
+        width: 100%;
+        padding-right: 27%;
+      }
+    } /* SM */
   #imdb-rating input[type=radio]:checked ~ label:after {
     background: url("../assets/clickstar.svg");
   }
