@@ -40,12 +40,12 @@ $(function(){
                             <a href="../pages/more_info.html?id=${movie.id}">   
                                 <div class="movie-btn" data-tooltip="More Info"><img  src="../assets/info.svg" alt="info"></div>
                             </a>
-                            <a href=",,/pages/watchpage_test.html?id=${movie.id}" >    
+                            <a href="../pages/watchpage.html?id=${movie.id}" >    
                                 <div class="movie-btn" data-tooltip="Watch Now"><img  src="../assets/play.svg" alt="play"></div>
                             </a>
-                            <a href="#">
-                                <div id="swap" class="movie-btn" data-tooltip="Add to Watchlist"><img src="../assets/plus.svg" alt="plus"></div>
-                            </a>
+                            
+                                <div class="movie-btn add_to_watchlist" data-tooltip="Add to Watchlist"><img src="../assets/plus.svg" alt="plus"></div>
+                            
                         </div>
                     </div>
                 </div>
@@ -58,17 +58,7 @@ $(function(){
     appendMostRecentMovies(most_recent_movies);
     
     
-    $("#swap").click(function(){
-        
-        if($(this).data("tooltip") === "Add to Watchlist"){
-            $(this).attr({"data-tooltip": "Remove from Watchlist"});
-            $(this).children("img").css({"transform" : "rotate(45deg)"});
-        };
-        
-        
-        
-        
-    });
+
 });
 
 
