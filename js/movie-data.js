@@ -2,7 +2,7 @@ const films = [
     {
         "name": "The Blair Witch Project",
         "id": "film1",
-        "img-path": "../assets/Movies/blairWitchProject_poster.jpg",
+        "imgPath": "../assets/Movies/blairWitchProject_poster.jpg",
         "imgBan": "../assets/Movies/blairWitchProject_banner.jpg",
         "year":"1999",
         "type": "Mystery",
@@ -22,7 +22,7 @@ const films = [
     {
         "name": "Eternal Sunshine of the Spotless Mind",
         "id": "film2",
-        "img-path": "../assets/Movies/eternalSunshineOfTheSpotlessMind_poster.jpg",
+        "imgPath": "../assets/Movies/eternalSunshineOfTheSpotlessMind_poster.jpg",
         "imgBan": "../assets/Movies/eternalSunshineOfTheSpotlessMind_banner.jpg",
         "year":"2004",
         "type": "Romance",
@@ -41,7 +41,7 @@ const films = [
     {
         "name": "What We Do in the Shadows",
         "id": "film3",
-        "img-path": "../assets/Movies/whatWeDoInTheShadows_poster.jpg",
+        "imgPath": "../assets/Movies/whatWeDoInTheShadows_poster.jpg",
         "imgBan": "../assets/Movies/whatWeDoInTheShadows_banner.jpg",
         "year":"2014",
         "type": "Comedy",
@@ -60,7 +60,7 @@ const films = [
     {
         "name": "Memento",
         "id": "film4",
-        "img-path": "../assets/Movies/memento_poster.png",
+        "imgPath": "../assets/Movies/memento_poster.png",
         "imgBan": "../assets/Movies/memento_banner.jpg",
         "year":"2000",
         "type": "Crime",
@@ -79,7 +79,7 @@ const films = [
     {
         "name": "Lady Bird",
         "id": "film5",
-        "img-path": "../assets/Movies/ladyBird_poster.png",
+        "imgPath": "../assets/Movies/ladyBird_poster.png",
         "imgBan": "../assets/Movies/ladyBird_banner.jpg",
         "year":"2017",
         "type": "Drama",
@@ -98,7 +98,7 @@ const films = [
     {
         "name": "Apocalypse Now Now",
         "id": "film6",
-        "img-path": "../assets/Movies/ApocalypseNowNow_poster.jpg",
+        "imgPath": "../assets/Movies/ApocalypseNowNow_poster.jpg",
         "imgBan": "../assets/Movies/ApocalypseNowNow_banner.jpg",
         "year":"2017",
         "type": "Fantasy",
@@ -117,7 +117,7 @@ const films = [
     {
         "name": "The Proposal",
         "id": "film7",
-        "img-path": "../assets/Movies/theProposal_poster.jpg",
+        "imgPath": "../assets/Movies/theProposal_poster.jpg",
         "imgBan": "../assets/Movies/theProposal_banner.jpg",
         "year":"2016",
         "type": "Comedy",
@@ -137,7 +137,7 @@ const films = [
     {
         "name": "Big Fish",
         "id": "film8",
-        "img-path": "../assets/Movies/bigFish_poster.jpg",
+        "imgPath": "../assets/Movies/bigFish_poster.jpg",
         "imgBan": "../assets/Movies/bigFish_banner.jpg",
         "year":"2003",
         "type": "Fantasy",
@@ -156,7 +156,7 @@ const films = [
     {
         "name": "Bottle Rocket",
         "id": "film9",
-        "img-path": "../assets/Movies/BottleRocket_poster.png",
+        "imgPath": "../assets/Movies/BottleRocket_poster.png",
         "imgBan": "../assets/Movies/bottleRocket_banner.jpg",
         "year":"1996",
         "type": "Crime",
@@ -175,7 +175,7 @@ const films = [
     {
         "name": "My Own Private Idaho",
         "id": "film10",
-        "img-path": "../assets/Movies/MyOwnPrivateIdaho_poster.png",
+        "imgPath": "../assets/Movies/MyOwnPrivateIdaho_poster.png",
         "imgBan": "../assets/Movies/myOwnPrivateIdaho_banner.jpg",
         "year":"1991",
         "type": "Thriller",
@@ -194,7 +194,7 @@ const films = [
     {
         "name": "Requeim for a Dream",
         "id": "film11",
-        "img-path": "../assets/Movies/RequiemForADream_poster.png",
+        "imgPath": "../assets/Movies/RequiemForADream_poster.png",
         "imgBan": "../assets/Movies/RequiemForADream_banner.jpg",
         "year":"1991",
         "type": "Adventure",
@@ -212,7 +212,7 @@ const films = [
     {
         "name": "Gummo",
         "id": "film12",
-        "img-path": "../assets/Movies/gummo_poster.png",
+        "imgPath": "../assets/Movies/gummo_poster.png",
         "imgBan": "../assets/Movies/gummo_banner.jpg",
         "year":"1997",
         "type": "Dystopian",
@@ -230,7 +230,7 @@ const films = [
     {
         "name": "Boyhood",
         "id": "film13",
-        "img-path": "../assets/Movies/BoyHood_poster.png",
+        "imgPath": "../assets/Movies/BoyHood_poster.png",
         "imgBan": "../assets/Movies/boyhood_banner.jpg",
         "year":"2014",
         "type": "Drama",
@@ -248,7 +248,7 @@ const films = [
     {
         "name": "Napoleon Dynamite",
         "id": "film14",
-        "img-path": "../assets/Movies/NapoleonDynamite_poster.png",
+        "imgPath": "../assets/Movies/NapoleonDynamite_poster.png",
         "imgBan": "../assets/Movies/NapoleonDynamite_banner.jpg",
         "year":"2004",
         "type": "Drama",
@@ -268,7 +268,7 @@ const films = [
     {
         "name": "Drugstore Cowboy",
         "id": "film15",
-        "img-path": "../assets/Movies/DrugstoreCowboy_poster.png",
+        "imgPath": "../assets/Movies/DrugstoreCowboy_poster.png",
         "imgBan": "../assets/Movies/drugstoreCowboy_banner.jpg",
         "year":"1989",
         "type": "Crime",
@@ -287,7 +287,7 @@ const films = [
     {
         "name": "Slacker",
         "id": "film16",
-        "img-path": "../assets/Movies/Slacker_poster.png",
+        "imgPath": "../assets/Movies/Slacker_poster.png",
         "imgBan": "../assets/Movies/slacker_banner.jpg",
         "year":"1991",
         "type": "Comedy",
@@ -306,7 +306,7 @@ const films = [
     {
         "name": "Donnie Darko",
         "id": "film17",
-        "img-path": "../assets/Movies/DonnieDarko_poster.png",
+        "imgPath": "../assets/Movies/DonnieDarko_poster.png",
         "imgBan": "../assets/Movies/donniedarko_banner.jpeg",
         "year":"2001",
         "type": "Sci-Fi",
@@ -325,7 +325,7 @@ const films = [
     {
         "name": "Pulp Fiction",
         "id": "film18",
-        "img-path": "../assets/Movies/PulpFiction_poster.png",
+        "imgPath": "../assets/Movies/PulpFiction_poster.png",
         "imgBan": "../assets/Movies/pulpFiction_banner.jpg",
         "year":"1994",
         "type": "Crime",
@@ -344,7 +344,7 @@ const films = [
     {
         "name": "Sex, Lies, and Videotape",
         "id": "film19",
-        "img-path": "../assets/Movies/SexLiesAndVideotape_poster.png",
+        "imgPath": "../assets/Movies/SexLiesAndVideotape_poster.png",
         "imgBan": "../assets/Movies/sexLiesAndVideotape_banner.jpg",
         "year":"1989",
         "type": "Drama",
@@ -363,7 +363,7 @@ const films = [
     {
         "name": "Safety Not Guaranteed",
         "id": "film20",
-        "img-path": "../assets/Movies/SafetyNotGuaranteed_poster.png",
+        "imgPath": "../assets/Movies/SafetyNotGuaranteed_poster.png",
         "imgBan": "../assets/Movies/safetyNotGuaranteed_banner.jpg",
         "year":"2012",
         "type": "Sci-Fi",
