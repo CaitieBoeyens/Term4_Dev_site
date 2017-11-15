@@ -79,7 +79,7 @@
 /* OVERLAY */
 
 .overlay {
-    padding: 2em;
+    padding: 0.5em;
     background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
     bottom: 0;
@@ -100,7 +100,7 @@
 }
 
 .overlay-info {
-    padding-bottom: 1em;
+    padding-bottom: 0.5em;
     padding-top: 0.5em;
     overflow: hidden;
     max-height: 0;
@@ -109,25 +109,25 @@
 }
 
 .overlay-buttons {
-    padding: 1em  0;
+    padding: 0.5em  0;
 }
 @media (min-width: 768px) {
     .movie-block1:hover .overlay .overlay-info {
-        max-height: 500px;
+        max-height: 300px;
         opacity: 1;
     
     }
 }
 @media (min-width: 768px) {
     .movie-block2:hover .overlay .overlay-info {
-        max-height: 500px;
+        max-height: 300px;
         opacity: 1;
     
     }
 }
 @media (min-width: 768px) {
     .movie-block3:hover .overlay .overlay-info {
-        max-height: 500px;
+        max-height: 300px;
         opacity: 1;
     
     }
@@ -135,7 +135,7 @@
 
 @media (min-width: 768px) {
     .movie-block4:hover .overlay .overlay-info {
-        max-height: 500px;
+        max-height: 300px;
         opacity: 1;
     
     }
