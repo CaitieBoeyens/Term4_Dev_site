@@ -28,7 +28,7 @@ $(function(){
                                 <div class="movie-btn" data-tooltip="Watch Now"><img  src="../assets/play.svg" alt="play"></div>
                             </a>
                             <a>
-                                <div class="movie-btn" data-tooltip="Add to Watchlist"><img src="../assets/plus.svg" alt="plus"></div>
+                                <div class="movie-btn add_to_watchlist" data-tooltip="Add to Watchlist"><img src="../assets/plus.svg" alt="plus"></div>
                             </a>
                         </div>
                     </div>
@@ -145,5 +145,8 @@ $(function(){
             //use filtered films array to append data
         })
 
-        
+        $(".add_to_watchlist").click(function(){
+            $(this).attr("data-tooltip", "Remove from Watchlist");
+            $(this).css("transform", "rotate(45deg)");
+        });
 });
