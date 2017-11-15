@@ -24,7 +24,7 @@ $(function(){
                             <a href="../pages/movieinfo.html?id=${this.id}">   
                                 <div class="movie-btn" data-tooltip="More Info"><img  src="../assets/info.svg" alt="info"></div>
                             </a>
-                            <a href="../pages/watchpage_test.html?id=${this.id}" >    
+                            <a href="../pages/watchpage.html?id=${this.id}" >    
                                 <div class="movie-btn" data-tooltip="Watch Now"><img  src="../assets/play.svg" alt="play"></div>
                             </a>
                             <a>
