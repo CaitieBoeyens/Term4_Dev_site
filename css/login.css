@@ -102,6 +102,7 @@ figcaption {
 
 .textDesciption p {
     padding: 80px 20px 0px 20px;
+    color: #999999;
 }
 
 .login {
@@ -213,39 +214,5 @@ footer {
     background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1));
     padding: 0px;
     margin: 70px 0px 0px 0px;
-}
-
-#mid-foot {
-    text-align: center;
-    
-}
-#mid-foot h5{
-    color: #aaa;
-}
-
-.social {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background: #145654;
-    color: #222;
-    margin-right: 20px;
-    float: right;
-    margin-top: 0.5em;
-    text-align: center;
-}
-
-.social i{
-    margin-top: 9px;
-}
-
-.social:hover {
-    background: #0b2f2d;
-}
-
-@media (max-width: 768px) {
-    .login {
-        width: 100%;
-    }
 }
 
