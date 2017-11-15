@@ -68,6 +68,15 @@ select option:hover {
     padding-right: 25%;
   }
 
+#reels img {
+	display: inline;
+
+}
+
+#imdb image {
+	display: inline;
+}
+
 
   /* Imdb rating */
 #imdb-rating {
