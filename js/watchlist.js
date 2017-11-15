@@ -24,9 +24,11 @@ $("#swap1").click(function(){
                        $(this).remove();
                     });
                    });
+
 $("#swap5").click(function(){
     $(this).parent(".overlay-buttons").parent(".overlay").parent(".movie-block5").parent("#poster5").fadeOut(400, function(){
             $(this).remove();
+    $("#no_movies").show();
                 });
     });
 

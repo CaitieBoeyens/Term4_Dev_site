@@ -200,8 +200,9 @@
     background-image:url(../assets/Movies/whatWeDoInTheShadows_banner.jpg);
 }
 
-.no_movies {
-    opacity: 0;
+#no_movies {
+    display: none;
     text-align: center;
     height:35vh;
+    padding:4em;
 }
